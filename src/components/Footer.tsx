@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="CARE HOME" className="h-20 md:h-24 w-auto mb-4" />
+            <img
+              src={logo}
+              alt="CARE HOME"
+              className="h-20 md:h-24 w-auto mb-4"
+            />
             <p className="text-background/70 mb-6 leading-relaxed">
               Compassionate de-addiction and rehabilitation services in a safe
               and structured environment.
@@ -20,7 +24,14 @@ const Footer = () => {
                 className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                6289424181
+                6289424181 (Dr. Saibal Sanyal)
+              </a>
+              <a
+                href="tel:9073012566"
+                className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                9073012566 (Dr. Soumaya Suvra Sengupta)
               </a>
               <a
                 href="mailto:saibalsanyal2@gmail.com"
