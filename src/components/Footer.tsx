@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="CARE HOME" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="CARE HOME" className="h-20 md:h-24 w-auto mb-4" />
             <p className="text-background/70 mb-6 leading-relaxed">
               Compassionate de-addiction and rehabilitation services in a safe
               and structured environment.
