@@ -4,7 +4,7 @@ import { FadeIn, StaggerContainer } from "@/components/animations/FadeIn";
 import heroAbout from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.48.jpeg";
 import galleryCounselling from "@/assets/gallery-counselling.jpg";
 import parallaxAddiction from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.51.jpeg";
-import founderSaibal from "@/assets/founder-saibal-home.jpg";
+import founderSaibal from "@/assets/founder-saibal-home.jpeg";
 import founderSoumya from "@/assets/founder-soumya-home.jpg";
 import teamFull from "@/assets/team-full.jpg";
 import { CheckCircle, Target, Lightbulb, Heart, Users } from "lucide-react";

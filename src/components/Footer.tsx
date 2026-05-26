@@ -24,14 +24,14 @@ const Footer = () => {
                 className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                6289424181 (Dr. Saibal Sanyal)
+                6289424181 (Saibal Sanyal)
               </a>
               <a
                 href="tel:9073012566"
                 className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                9073012566 (Dr. Soumaya Suvra Sengupta)
+                9073012566 (Soumaya Suvra Sengupta)
               </a>
               <a
                 href="mailto:saibalsanyal2@gmail.com"
