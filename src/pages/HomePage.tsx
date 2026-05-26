@@ -8,7 +8,7 @@ import heroHome2 from "@/assets/gallery-group-session.jpg";
 import heroHome3 from "@/assets/gallery-na-meeting.jpg";
 import heroAbout from "@/assets/gallery-group-session.jpg";
 import parallaxAddiction from "@/assets/gallery-doctor.jpg";
-import founderSaibal from "@/assets/founder-saibal-home.jpg";
+import founderSaibal from "@/assets/founder-saibal-home.jpeg";
 import founderSoumya from "@/assets/founder-soumya-home.jpg";
 import teamFull from "@/assets/team-full.jpg";
 import socialreintegration from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.47.jpeg";
