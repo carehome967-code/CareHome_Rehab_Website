@@ -46,7 +46,7 @@ const AboutPage = () => {
                   </p>
                 </div>
                 <p>
-                  Our comprehensive treatment model strictly follows the proven <strong className="text-foreground">12 Steps and 12 Traditions</strong> approach, seamlessly integrating medical treatment, cognitive behavioral therapy (CBT), individual counselling, and value-based recovery practices.
+                  Our comprehensive treatment model strictly follows the proven <strong className="text-foreground">12 Steps and 12 Traditions</strong> approach, seamlessly integrating medical treatment, cognitive behavioral therapy(CBT), individual counselling, and value-based recovery practices.
                 </p>
                 <p>
                   Beyond acute clinical care, CARE HOME promotes <strong className="text-foreground">long-term social reintegration</strong>. We focus on rebuilding lives by encouraging discipline, personal responsibility, and the development of positive life skills essential for relapse prevention.
