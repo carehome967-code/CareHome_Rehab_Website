@@ -69,7 +69,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
         </motion.div>
 
         {/* Animated Title — word-by-word reveal */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-secondary leading-tight mb-6 overflow-hidden">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-secondary leading-tight mb-6 overflow-hidden">
           {/* Split words and animate each one */}
           {title.split(" ").map((word, i) => {
             // Highlight keywords in white for contrast against yellow title
@@ -98,7 +98,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
-          className="text-lg md:text-xl text-primary font-bold max-w-2xl mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-2xl mb-10 leading-relaxed"
         >
           {subtitle}
         </motion.p>

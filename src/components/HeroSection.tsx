@@ -13,11 +13,11 @@ const HeroSection = ({ image, title, subtitle, children }: HeroSectionProps) => 
     >
       <div className="absolute inset-0 bg-foreground/60" />
       <div className="relative z-10 container mx-auto px-4 text-center py-20">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-secondary mb-6 animate-fade-in-up">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-secondary mb-6 animate-fade-in-up">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-primary font-bold max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             {subtitle}
           </p>
         )}
