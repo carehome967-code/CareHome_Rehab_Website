@@ -63,6 +63,7 @@ const HomePage = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="tel:6289424181"
+            aria-label="Call Care Home at 6289424181"
             className="inline-flex items-center gap-2 bg-secondary hover:bg-yellow-400 text-secondary-foreground px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-yellow-400/30 active:scale-95"
           >
             Call Now
@@ -91,13 +92,16 @@ const HomePage = () => {
       {/* About Preview */}
       <section className="py-24 bg-section-alt">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn direction="left">
               <img
                 src={heroAbout}
                 alt="Care Home medical team"
+                width="800"
+                height="600"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 loading="lazy"
+                decoding="async"
               />
               {/* Founder photos */}
               <div className="flex gap-6 mt-8 justify-center">
@@ -106,7 +110,11 @@ const HomePage = () => {
                     <img
                       src={founderSaibal}
                       alt="Saibal Sanyal"
+                      width="96"
+                      height="96"
                       className="w-full h-full object-cover object-top"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p className="text-sm font-semibold">Saibal Sanyal</p>
@@ -119,7 +127,11 @@ const HomePage = () => {
                     <img
                       src={founderSoumya}
                       alt="Soumya Suvra Sengupta"
+                      width="96"
+                      height="96"
                       className="w-full h-full object-cover object-top"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p className="text-sm font-semibold">Soumya Suvra Sengupta</p>
@@ -145,7 +157,7 @@ const HomePage = () => {
                 to="/about"
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
               >
-                Learn More <ArrowRight className="w-4 h-4" />
+                Learn More <ArrowRight aria-hidden="true" className="w-4 h-4" />
               </Link>
             </FadeIn>
           </div>
@@ -170,12 +182,15 @@ const HomePage = () => {
                 <img
                   src={detoxification}
                   alt="Detoxification Support"
+                  width="400"
+                  height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-16 h-16 rounded-2xl bg-healthcare-light-blue flex items-center justify-center mx-auto mb-6 -mt-8 relative z-10 border-4 border-card">
-                <Heart className="w-8 h-8 text-primary" />
+                <Heart aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
                 Detoxification Support
@@ -191,12 +206,15 @@ const HomePage = () => {
                 <img
                   src={counselling}
                   alt="Counselling & Therapy"
+                  width="400"
+                  height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-16 h-16 rounded-2xl bg-healthcare-light-blue flex items-center justify-center mx-auto mb-6 -mt-8 relative z-10 border-4 border-card">
-                <Users className="w-8 h-8 text-primary" />
+                <Users aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
                 Counselling & Therapy
@@ -212,12 +230,15 @@ const HomePage = () => {
                 <img
                   src={medicalcare}
                   alt="24/7 Medical Care"
+                  width="400"
+                  height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-16 h-16 rounded-2xl bg-healthcare-light-blue flex items-center justify-center mx-auto mb-6 -mt-8 relative z-10 border-4 border-card">
-                <Clock className="w-8 h-8 text-primary" />
+                <Clock aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
                 24/7 Medical Care
@@ -233,12 +254,15 @@ const HomePage = () => {
                 <img
                   src={socialreintegration}
                   alt="Social Reintegration"
+                  width="400"
+                  height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="w-16 h-16 rounded-2xl bg-healthcare-light-blue flex items-center justify-center mx-auto mb-6 -mt-8 relative z-10 border-4 border-card">
-                <Award className="w-8 h-8 text-primary" />
+                <Award aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
                 Social Reintegration
@@ -307,7 +331,7 @@ const HomePage = () => {
                   delay={i * 0.1}
                   className="flex items-center gap-4 p-4 rounded-xl bg-section-alt"
                 >
-                  <CheckCircle className="w-6 h-6 text-secondary flex-shrink-0" />
+                  <CheckCircle aria-hidden="true" className="w-6 h-6 text-secondary flex-shrink-0" />
                   <span className="font-medium">{item}</span>
                 </FadeIn>
               ))}
@@ -329,7 +353,7 @@ const HomePage = () => {
               </h2>
             </FadeIn>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               { name: "Dr. Suranjana Ganguly", role: "Psychiatrist" },
               { name: "Dr. Amal Choudhury", role: "General Physician" },
@@ -360,7 +384,7 @@ const HomePage = () => {
                 className="healthcare-card p-5 text-center"
               >
                 <div className="w-12 h-12 rounded-full bg-healthcare-light-blue flex items-center justify-center mx-auto mb-3">
-                  <Users className="w-6 h-6 text-primary" />
+                  <Users aria-hidden="true" className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-sm">
                   {member.name}
@@ -375,8 +399,11 @@ const HomePage = () => {
             <img
               src={teamFull}
               alt="CARE HOME Full Team"
-              className="rounded-2xl shadow-xl w-full object-cover"
+              width="1200"
+              height="800"
+              className="rounded-2xl shadow-xl w-full object-cover aspect-video sm:aspect-auto"
               loading="lazy"
+              decoding="async"
             />
             <p className="text-center text-muted-foreground mt-4 font-medium">
               The CARE HOME Team – Service with Compassion
@@ -398,6 +425,7 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:6289424181"
+              aria-label="Call Care Home at 6289424181"
               className="inline-flex items-center justify-center gap-2 bg-background text-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition-opacity"
             >
               Call Now

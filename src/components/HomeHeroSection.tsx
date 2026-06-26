@@ -22,6 +22,13 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
 
   return (
     <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Preload images to prevent flash on first cycle */}
+      <div className="hidden" aria-hidden="true">
+        {images.map((src, idx) => (
+          <img key={idx} src={src} alt="" loading="eager" decoding="sync" />
+        ))}
+      </div>
+
       {/* Background Slideshow */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence initial={false}>
@@ -48,8 +55,8 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
             key={i}
             onClick={() => setCurrentIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all duration-500 ${
-              i === currentIndex ? "w-8 bg-primary" : "w-2 bg-background/50"
+            className={`h-1.5 rounded-full transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+              i === currentIndex ? "w-8 bg-primary" : "w-2 bg-background/50 hover:bg-background/80"
             }`}
           />
         ))}
@@ -64,7 +71,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
           transition={{ duration: 0.6, delay: 0.1 }}
           className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/40 text-background px-4 py-2 rounded-full text-sm font-semibold mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-primary animate-pulse inline-block" />
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse inline-block" aria-hidden="true" />
           Trusted De-Addiction & Rehab Centre Since 2022
         </motion.div>
 
@@ -119,7 +126,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="mt-14 flex flex-wrap gap-8"
+          className="mt-10 md:mt-14 flex flex-wrap gap-6 md:gap-8"
         >
           {[
             { value: "125+", label: "Families Helped" },

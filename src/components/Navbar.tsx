@@ -78,7 +78,7 @@ const Navbar = () => {
 
         {/* Mobile nav */}
         {isOpen && (
-          <div className="lg:hidden pb-4 border-t border-border animate-fade-in">
+          <div className="lg:hidden pb-4 border-t border-border animate-fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
             <div className="flex flex-col gap-1 pt-4">
               {navLinks.map((link) => (
                 <Link

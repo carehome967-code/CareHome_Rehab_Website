@@ -8,7 +8,7 @@ import NewSlider from "@/pages/NewSlider";
 import counsellingImg from "@/assets/gallery-counselling.jpg";
 import dailyLivingImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.28.15.jpeg";
 import detoxificationImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.53.jpeg";
-import healthyFoodsImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.28.35 (1).jpeg";
+import healthyFoodsImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.28.34.jpeg";
 import housekeepingImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.51.jpeg";
 import medicalMonitoringImg from "@/assets/gallery-doctor.jpg";
 import socialEngagementImg from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.28.18.jpeg";

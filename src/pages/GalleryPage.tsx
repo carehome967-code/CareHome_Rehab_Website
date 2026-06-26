@@ -5,6 +5,7 @@ import { FadeIn, StaggerContainer } from "@/components/animations/FadeIn";
 import heroFacilities from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.28.05.jpeg";
 import { X, Play, Image as ImageIcon, Video, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { LazyImage, LazyVideo } from "@/components/LazyMedia";
 
 // Using Vite's import.meta.glob to load all media dynamically
 const imageModules = import.meta.glob<{ default: string }>([
@@ -113,11 +114,10 @@ const GalleryPage = () => {
                     className="aspect-square rounded-2xl overflow-hidden cursor-pointer group relative shadow-md hover:shadow-2xl transition-all duration-500"
                     onClick={() => setLightbox({ index: i, type: 'image', items: photoItems })}
                   >
-                    <img
+                    <LazyImage
                       src={item.src}
                       alt={item.alt}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      loading="lazy"
                     />
                   </FadeIn>
                 ))}
@@ -147,18 +147,18 @@ const GalleryPage = () => {
                     onClick={() => setLightbox({ index: i, type: 'video', items: videoItems })}
                   >
                     <div className="relative w-full h-full">
-                      <video
+                      <LazyVideo
                         src={item.src}
                         className="w-full h-full object-cover"
                         muted
                         loop
-                        onMouseEnter={(e) => e.currentTarget.play()}
-                        onMouseLeave={(e) => {
+                        onMouseEnter={(e: React.MouseEvent<HTMLVideoElement>) => e.currentTarget.play()}
+                        onMouseLeave={(e: React.MouseEvent<HTMLVideoElement>) => {
                           e.currentTarget.pause();
                           e.currentTarget.currentTime = 0;
                         }}
                       />
-                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                         <Play className="w-12 h-12 text-white" />
                       </div>
                       <div className="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded-full text-xs">

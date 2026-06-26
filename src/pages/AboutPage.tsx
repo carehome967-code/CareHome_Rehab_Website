@@ -26,7 +26,7 @@ const AboutPage = () => {
       {/* About Content */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
             <FadeIn direction="right">
               <img src={galleryCounselling} alt="Counselling session" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" loading="lazy" />
             </FadeIn>
@@ -70,7 +70,7 @@ const AboutPage = () => {
             <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Leadership</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2">Our Founders</h2>
           </FadeIn>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
             {[
               {
                 name: "Saibal Sanyal",
@@ -115,7 +115,7 @@ const AboutPage = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-4">Meet Our Team</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Our multidisciplinary team of medical professionals, counsellors, and support staff ensures comprehensive care for every individual.</p>
           </FadeIn>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
               { name: "Dr. Suranjana Ganguly", role: "Psychiatrist" },
               { name: "Dr. Amal Choudhury", role: "General Physician" },
