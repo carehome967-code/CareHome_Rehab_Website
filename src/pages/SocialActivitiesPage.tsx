@@ -7,8 +7,10 @@ import { Calendar, Users, ArrowRight } from "lucide-react";
 
 const SocialActivitiesPage = () => {
   useSEO({
-    title: "Social Activities | Care Home Recovery",
-    description: "Explore the social activities and initiatives organized by Care Home, including the International Day Against Drug Abuse and Illicit Trafficking.",
+    title: "Community & Social Activities | Care Home Rehabilitation Kolkata",
+    description: "Social reintegration activities, community health initiatives, and International Drug Abuse Awareness events hosted by Care Home Rehabilitation in Garia, Kolkata.",
+    keywords: "Social Activities Care Home Kolkata, Community Rehabilitation Kolkata, Drug Abuse Day Care Home Garia",
+    canonical: "https://www.carehomekolkata.in/social-activities",
   });
 
   return (

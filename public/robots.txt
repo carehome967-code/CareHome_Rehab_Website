@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://carehomekolkata.in/sitemap.xml
+Sitemap: https://www.carehomekolkata.in/sitemap.xml

@@ -11,16 +11,18 @@ import { CheckCircle, Target, Lightbulb, Heart, Users } from "lucide-react";
 
 const AboutPage = () => {
   useSEO({
-    title: "About Us | Care Home Recovery",
-    description: "Learn about Care Home's professional de-addiction and rehabilitation services, our story, founders, and multidisciplinary medical team.",
+    title: "About Us | Leading Rehabilitation Centre in Garia, Kolkata | Care Home",
+    description: "Learn about Care Home Rehabilitation Centre in Garia, Kolkata. Premier provider of 24/7 patient care, elder care home, stroke rehabilitation, and medical recovery in South 24 Parganas.",
+    keywords: "Best Rehabilitation Centre in Kolkata, Care Home in Garia Kolkata, Rehabilitation Centre in Garia, Patient Care Home Kolkata, Elder Care Home Kolkata, Stroke Rehabilitation Centre Kolkata, Home Like Rehabilitation Centre Kolkata, Medical Care Home South Kolkata, Senior Citizen Care Home Kolkata",
+    canonical: "https://www.carehomekolkata.in/about",
   });
 
   return (
     <div>
       <HeroSection
         image={heroAbout}
-        title="About CARE HOME"
-        subtitle="Professional de-addiction and rehabilitation services since 2022"
+        title="About Care Home Rehabilitation Centre"
+        subtitle="Premier 24/7 Patient Care & Medical Rehabilitation Centre in Garia, Kolkata since 2022"
       />
 
       {/* About Content */}
@@ -28,34 +30,34 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
             <FadeIn direction="right">
-              <img src={galleryCounselling} alt="Counselling session" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" loading="lazy" />
+              <img src={galleryCounselling} alt="Rehabilitation Centre in Garia Kolkata - Professional Care Team" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" loading="lazy" />
             </FadeIn>
             <FadeIn direction="left">
-              <h2 className="text-3xl font-heading font-bold mb-6">Our Story</h2>
+              <h2 className="text-3xl font-heading font-bold mb-6">Our Story & Medical Mission</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">CARE HOME</strong> is a premier facility providing structured <strong className="text-foreground">de-addiction and rehabilitation services since 2022</strong>. We specialize in delivering holistic, evidence-based recovery programs tailored for individuals suffering from <strong className="text-foreground">substance use disorders and behavioral addictions</strong>.
+                  <strong className="text-foreground">CARE HOME Rehabilitation Centre</strong> is a trusted healthcare institution located at Panchpota Dhalai Bridge, Garia Station Road, Kolkata. Since 2022, we have specialized in delivering holistic <strong className="text-foreground">stroke rehabilitation, 24x7 patient care, elder care home services, physiotherapy, dementia care, and de-addiction recovery</strong>.
                 </p>
                 <p>
-                  To date, <strong className="text-foreground">over 125 families</strong> have benefited directly from our clinical interventions, experiencing sustained abstinence, improved mental wellbeing, and successful social reintegration.
+                  Serving families across <strong className="text-foreground">Garia, Narendrapur, Sonarpur, Kamalgazi, Baghajatin, Patuli, and South 24 Parganas</strong>, over 125 families have trusted Care Home for dedicated post-operative recovery, bedridden patient assistance, and long-term medical care.
                 </p>
                 <div className="bg-background/50 p-6 rounded-xl border border-border/50 my-6 shadow-sm">
-                  <p className="font-semibold text-foreground mb-2">Our Dedicated Medical Team</p>
+                  <p className="font-semibold text-foreground mb-2">Multidisciplinary Medical Specialists</p>
                   <p className="text-sm">
-                    Our <strong className="text-primary">multidisciplinary team</strong> of expert psychiatrists, experienced physicians, clinical psychologists, and trained support professionals ensures <strong className="text-foreground">medically supervised detoxification</strong>, safe withdrawal management, and structured psychological care at every stage of recovery.
+                    Our team of expert <strong className="text-primary">psychiatrists, general physicians, clinical psychologists, physiotherapists, and 24/7 nurses</strong> ensures round-the-clock clinical supervision, personalized recovery plans, and compassionate nursing assistance.
                   </p>
                 </div>
                 <p>
-                  Our comprehensive treatment model strictly follows the proven <strong className="text-foreground">12 Steps and 12 Traditions</strong> approach, seamlessly integrating medical treatment, cognitive behavioral therapy(CBT), individual counselling, and value-based recovery practices.
+                  Our comprehensive rehabilitation model combines state-of-the-art physiotherapy, cognitive behavioral therapy (CBT), daily medical checkups, and structured 12-Step recovery methodologies.
                 </p>
                 <p>
-                  Beyond acute clinical care, CARE HOME promotes <strong className="text-foreground">long-term social reintegration</strong>. We focus on rebuilding lives by encouraging discipline, personal responsibility, and the development of positive life skills essential for relapse prevention.
+                  Beyond clinical care, CARE HOME fosters <strong className="text-foreground">social reintegration and dignified living</strong> for senior citizens and recovering individuals.
                 </p>
                 <p>
-                  Through <strong className="text-foreground">The Care Foundation</strong>, we facilitate vital vocational training and livelihood programs to help individuals achieve financial independence and dignity of labour. These life-changing initiatives are proudly supported by esteemed institutions such as the <span className="font-medium text-foreground">Ramakrishna Mission, Indian Institute of Technology (IIT), and The George Telegraph Institute</span>.
+                  Through <strong className="text-foreground">The Care Foundation</strong>, we facilitate vocational guidance and community support programs, partnered with respected institutions such as the <span className="font-medium text-foreground">Ramakrishna Mission, Indian Institute of Technology (IIT), and The George Telegraph Institute</span>.
                 </p>
                 <p className="text-lg font-medium text-foreground mt-6 border-l-4 border-primary pl-4">
-                  CARE HOME believes in a compassionate, scientific, and patient-first approach to addiction recovery, partnering with CSR stakeholders to create meaningful, lasting social impact.
+                  CARE HOME is committed to being the most compassionate and affordable rehabilitation centre in Kolkata.
                 </p>
               </div>
             </FadeIn>

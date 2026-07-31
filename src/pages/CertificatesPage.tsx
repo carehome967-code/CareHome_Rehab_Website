@@ -30,8 +30,10 @@ const certificates = [
 
 const CertificatesPage = () => {
   useSEO({
-    title: "Certificates & Accreditations | Care Home Recovery",
-    description: "Professionally certified and recognized qualifications of Care Home Recovery.",
+    title: "Government Certified Rehabilitation Centre Kolkata | Accreditations & Licenses",
+    description: "Certified & licensed rehabilitation centre in Garia, Kolkata. Accredited staff, trade license, NACO training, and professional medical certifications.",
+    keywords: "Certified Rehabilitation Centre Kolkata, Licensed Care Home Kolkata, Certified Rehab Centre Garia, Medical Certifications Care Home",
+    canonical: "https://www.carehomekolkata.in/certificates",
   });
   
   const [selectedCert, setSelectedCert] = useState<number | null>(null);

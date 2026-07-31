@@ -60,16 +60,18 @@ const plans = [
 
 const AccommodationPage = () => {
   useSEO({
-    title: "Accommodation | Care Home Recovery",
-    description: "Various comfortable and clean living spaces for recovery including general and VIP beds.",
+    title: "Accommodation & Admission | Affordable Care Home in Garia, Kolkata",
+    description: "Explore affordable patient care accommodation plans at Care Home in Garia, Kolkata. 24x7 nursing, doctor visits, nutritious meals, and clean living spaces.",
+    keywords: "Affordable Rehabilitation Centre Kolkata, Patient Care Home Kolkata, Care Home in Garia, Senior Citizen Care Home Kolkata, Bedridden Patient Care Home Kolkata",
+    canonical: "https://www.carehomekolkata.in/accommodation",
   });
 
   return (
     <div>
       <HeroSection
         image={heroAccommodation}
-        title="Accommodation"
-        subtitle="Comfortable and clean living spaces for recovery"
+        title="Patient Care Accommodation & Admission in Garia, Kolkata"
+        subtitle="Hygienic, comfortable, and affordable residential care plans for seniors and patients"
       />
 
       <section className="py-24 bg-card">

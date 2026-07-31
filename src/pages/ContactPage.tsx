@@ -8,24 +8,25 @@ import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 const ContactPage = () => {
   useSEO({
-    title: "Contact Us | Care Home Recovery",
-    description:
-      "Get in touch with Care Home Recovery. We're here to help you take the first step towards a better life.",
+    title: "Contact Care Home Rehabilitation Centre in Garia, Kolkata | 24x7 Admission",
+    description: "Contact Care Home Rehabilitation Centre near Garia Station & Dhalai Bridge, Kolkata. Located at Panchpota, Gomkol Bus Stop. Call 7980611010 or email carehomekol@gmail.com.",
+    keywords: "Care Home in Garia, Rehabilitation Centre in Garia, Care Home near Garia Station, Rehab Centre near Panchpota, Rehabilitation Centre near Dhalai Bridge, Care Home near Gomkol Bus Stop, Patient Care Centre Garia Station Road, Rehabilitation Centre South 24 Parganas",
+    canonical: "https://www.carehomekolkata.in/contact",
   });
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Hello CARE HOME,%0A%0AName: ${form.name}%0APhone: ${form.phone}%0AMessage: ${form.message}`;
-    window.open(`https://wa.me/916289424181?text=${text}`, "_blank");
+    window.open(`https://wa.me/917980611010?text=${text}`, "_blank");
   };
 
   return (
     <div>
       <HeroSection
         image={heroContact}
-        title="Contact Us"
-        subtitle="We're here to help you take the first step"
+        title="Contact Care Home Rehabilitation Centre in Garia, Kolkata"
+        subtitle="24x7 Admission & Support — Near Garia Station, Panchpota Dhalai Bridge"
       />
 
       <section className="py-24 bg-card">
@@ -60,23 +61,36 @@ const ContactPage = () => {
                   <div className="w-12 h-12 rounded-xl bg-healthcare-light-blue flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Phone-1</h3>
-                    <a
-                      href="tel:6289424181"
-                      className="text-primary hover:underline"
-                    >
-                      6289424181
-                    </a>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Phone-2</h3>
-                    <a
-                      href="tel:9073012566"
-                      className="text-primary hover:underline"
-                    >
-                      9073012566
-                    </a>
+                  <div className="space-y-2">
+                    <div>
+                      <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wide">Mobile</h3>
+                      <a
+                        href="tel:7980611010"
+                        className="text-primary hover:underline font-medium text-base"
+                      >
+                        7980611010
+                      </a>
+                    </div>
+                    <div className="flex flex-wrap gap-4 pt-1">
+                      <div>
+                        <h4 className="font-semibold text-xs text-muted-foreground">Phone-1</h4>
+                        <a
+                          href="tel:6289424181"
+                          className="text-primary hover:underline text-sm"
+                        >
+                          6289424181
+                        </a>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-xs text-muted-foreground">Phone-2</h4>
+                        <a
+                          href="tel:9073012566"
+                          className="text-primary hover:underline text-sm"
+                        >
+                          9073012566
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -86,8 +100,14 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a
+                      href="mailto:carehomekol@gmail.com"
+                      className="text-primary hover:underline block font-medium"
+                    >
+                      carehomekol@gmail.com
+                    </a>
+                    <a
                       href="mailto:saibalsanyal2@gmail.com"
-                      className="text-primary hover:underline"
+                      className="text-primary hover:underline block text-sm text-muted-foreground mt-1"
                     >
                       saibalsanyal2@gmail.com
                     </a>

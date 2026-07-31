@@ -19,16 +19,18 @@ const facilities = [
 
 const FacilitiesPage = () => {
   useSEO({
-    title: "Facilities | Care Home Recovery",
-    description: "Explore the comfortable, supportive facilities offered at Care Home for comprehensive recovery.",
+    title: "Facilities | Best Care Home & Rehabilitation Centre in Garia, Kolkata",
+    description: "Discover 24/7 medical supervision, hygienic rooms, power backup, and patient-first facilities at Care Home Rehabilitation Centre in Garia, Kolkata.",
+    keywords: "Care Home in Garia, Rehabilitation Centre in Garia, Patient Care Centre Garia Station Road, 24 Hours Patient Care Home Kolkata, Rehab Centre near Panchpota",
+    canonical: "https://www.carehomekolkata.in/facilities",
   });
 
   return (
     <div>
       <HeroSection
         image={heroFacilities}
-        title="Our Facilities"
-        subtitle="A comfortable and supportive environment for recovery"
+        title="Rehabilitation & Patient Care Facilities in Garia, Kolkata"
+        subtitle="Hygienic, secure, and supportive healing environment in South 24 Parganas"
       />
 
       <section className="py-24 bg-card">

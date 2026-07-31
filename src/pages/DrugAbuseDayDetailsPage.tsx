@@ -16,8 +16,10 @@ const heroImage = galleryImages[0];
 
 const DrugAbuseDayDetailsPage = () => {
   useSEO({
-    title: "International Day Against Drug Abuse | Care Home Recovery",
-    description: "Details about our initiatives on the International Day Against Drug Abuse and Illicit Trafficking.",
+    title: "International Day Against Drug Abuse | Care Home Rehabilitation Kolkata",
+    description: "Details about our initiatives on the International Day Against Drug Abuse and Illicit Trafficking in Garia, Kolkata.",
+    keywords: "Drug Abuse Day Care Home Kolkata, Substance Abuse Awareness Garia, Care Home Social Initiatives",
+    canonical: "https://www.carehomekolkata.in/social-activities/drug-abuse-day",
   });
 
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);

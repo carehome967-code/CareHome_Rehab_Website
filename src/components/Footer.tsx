@@ -11,14 +11,20 @@ const Footer = () => {
           <div>
             <img
               src={logo}
-              alt="CARE HOME"
+              alt="Care Home - Best Rehabilitation Centre in Garia, Kolkata"
               className="h-20 md:h-24 w-auto mb-4"
             />
             <p className="text-background/70 mb-6 leading-relaxed">
-              Compassionate de-addiction and rehabilitation services in a safe
-              and structured environment.
+              Premier 24/7 patient care home and rehabilitation centre in Garia, Kolkata offering stroke rehabilitation, elder care, physiotherapy, dementia care, and de-addiction recovery.
             </p>
             <div className="space-y-3">
+              <a
+                href="tel:7980611010"
+                className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                7980611010 (Mobile)
+              </a>
               <a
                 href="tel:6289424181"
                 className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
@@ -32,6 +38,13 @@ const Footer = () => {
               >
                 <Phone className="w-4 h-4" />
                 9073012566 (Soumaya Suvra Sengupta)
+              </a>
+              <a
+                href="mailto:carehomekol@gmail.com"
+                className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                carehomekol@gmail.com
               </a>
               <a
                 href="mailto:saibalsanyal2@gmail.com"

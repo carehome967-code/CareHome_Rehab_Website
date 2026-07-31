@@ -19,67 +19,69 @@ import { Slider } from "@radix-ui/react-slider";
 const services = [
   { 
     icon: Heart, 
-    title: "Daily Living Assistance", 
-    desc: <>Personalized support for <strong className="text-foreground">daily routines and activities</strong>, ensuring comfort and comprehensive therapeutic care for every resident throughout their <strong className="text-foreground">addiction recovery journey</strong>.</>,
+    title: "Stroke Rehabilitation & Physiotherapy", 
+    desc: <>Advanced <strong className="text-foreground">stroke recovery programs & daily physiotherapy</strong> conducted by experienced physiotherapists in Kolkata to restore motor skills, mobility, and speech for post-stroke patients.</>,
     image: dailyLivingImg,
-    alt: "Daily living assistance at care home"
+    alt: "Stroke Rehabilitation Centre Kolkata & Physiotherapy in Garia"
   },
   { 
     icon: Activity, 
-    title: "Medical Monitoring", 
-    desc: <><strong className="text-foreground">Round-the-clock medical supervision</strong> by trained professionals, including expert psychiatrists and physicians, to ensure the absolute safety and physical well-being of all residents.</>,
+    title: "24/7 Medical & Bedridden Patient Care", 
+    desc: <><strong className="text-foreground">Round-the-clock nursing supervision</strong> by trained doctors and staff for bedridden, post-operative, and long-term care patients in Garia, Kolkata.</>,
     image: medicalMonitoringImg,
-    alt: "Medical monitoring and supervision"
-  },
-  { 
-    icon: Droplets, 
-    title: "Detoxification Support", 
-    desc: <><strong className="text-foreground">Medically supervised detoxification</strong> and expert withdrawal management using deeply integrated, evidence-based <strong className="text-foreground">clinical protocols</strong> to minimize discomfort and health risks.</>,
-    image: detoxificationImg,
-    alt: "Detoxification support services"
-  },
-  { 
-    icon: MessageCircle, 
-    title: "Counselling & Therapy", 
-    desc: <>Intensive <strong className="text-foreground">individual and group counselling sessions</strong> meticulously conducted by our experienced clinical psychologists and empathetic behavioral therapists.</>,
-    image: counsellingImg,
-    alt: "Counselling and therapy session"
-  },
-  { 
-    icon: Utensils, 
-    title: "Healthy Meals", 
-    desc: <>Highly nutritious and carefully balanced dietary meals prepared daily to rapidly <strong className="text-foreground">support physical recovery</strong> and restore overall holistic health.</>,
-    image: healthyFoodsImg,
-    alt: "Healthy nutritious meals"
-  },
-  { 
-    icon: Sparkles, 
-    title: "Housekeeping & Hygiene", 
-    desc: <>Consistent, thorough <strong className="text-foreground">cleaning and facility maintenance</strong> strictly enforced to maintain a secure, deeply hygienic, and soothing living environment for the recovery mindset.</>,
-    image: housekeepingImg,
-    alt: "Housekeeping and hygiene services"
+    alt: "24 Hours Bedridden Patient Care Home Kolkata"
   },
   { 
     icon: Users, 
-    title: "Social Engagement Programs", 
-    desc: <><strong className="text-foreground">Community-based therapeutic activities</strong> and specialized programs structurally designed to actively promote vital social interaction and essential <strong className="text-foreground">positive lifestyle development</strong>.</>,
+    title: "Elder Care & Senior Citizen Living", 
+    desc: <>Compassionate <strong className="text-foreground">elderly care and old age care home services</strong> in South Kolkata providing structured routines, nutritious meals, and medical monitoring.</>,
     image: socialEngagementImg,
-    alt: "Social engagement activities"
+    alt: "Elder Care Home Kolkata & Senior Citizen Rehabilitation"
+  },
+  { 
+    icon: Droplets, 
+    title: "Post-Surgery & Orthopedic Rehabilitation", 
+    desc: <><strong className="text-foreground">Post-hospital recovery care</strong> and joint replacement rehabilitation tailored for rapid healing in a safe, hygienic environment.</>,
+    image: detoxificationImg,
+    alt: "Post Surgery Rehabilitation Kolkata"
+  },
+  { 
+    icon: MessageCircle, 
+    title: "Dementia & Alzheimer's Care", 
+    desc: <>Specialized cognitive therapy and compassionate memory care for individuals suffering from <strong className="text-foreground">Dementia and Alzheimer's disease</strong>.</>,
+    image: counsellingImg,
+    alt: "Dementia Care Home Kolkata"
+  },
+  { 
+    icon: Utensils, 
+    title: "Nutritious Diet & Palliative Support", 
+    desc: <>Customized dietary plans and <strong className="text-foreground">palliative care</strong> for chronic conditions to support physical healing and pain management.</>,
+    image: healthyFoodsImg,
+    alt: "Palliative Care Centre Kolkata"
+  },
+  { 
+    icon: Sparkles, 
+    title: "De-Addiction & Medically Supervised Recovery", 
+    desc: <><strong className="text-foreground">Medically supervised detoxification</strong> and 12-Step recovery counseling for substance use disorders in Kolkata.</>,
+    image: housekeepingImg,
+    alt: "Rehabilitation Centre in Kolkata - De-Addiction Services"
   },
 ];
 
 const ServicesPage = () => {
   useSEO({
-    title: "Our Services | Care Home Recovery",
-    description: "Discover our comprehensive care services for every stage of recovery, from medical monitoring to social engagement programs.",
+    title: "Rehabilitation Services in Kolkata | Stroke, Elder & Physiotherapy in Garia",
+    description: "Explore comprehensive medical rehabilitation services at Care Home in Garia, Kolkata: Stroke recovery, physiotherapy, post-surgery rehab, dementia care, and 24/7 patient care.",
+    keywords: "Stroke Rehabilitation Centre Kolkata, Physiotherapy Rehabilitation Centre Kolkata, Elder Care Home Kolkata, Post Surgery Rehabilitation Kolkata, Dementia Care Home Kolkata, Palliative Care Centre Kolkata, 24 Hours Patient Care Home Kolkata, Rehabilitation Centre in Garia",
+    canonical: "https://www.carehomekolkata.in/services",
   });
 
   return (
     <div>
       <HeroSection
         image={heroServices}
-        title="Our Services"
-        subtitle="Comprehensive medical care and therapeutic programs for every stage of recovery"
+        title="Comprehensive Rehabilitation Services in Garia, Kolkata"
+        subtitle="Dedicated 24/7 medical care, stroke recovery, elder care, and physiotherapy programs in South 24 Parganas"
       />
 
       <section className="py-24 bg-card">

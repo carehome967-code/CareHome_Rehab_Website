@@ -34,9 +34,10 @@ const mediaItems = [...photoItems, ...videoItems];
 
 const GalleryPage = () => {
   useSEO({
-    title: "Gallery | Care Home Recovery",
-    description:
-      "View our gallery to catch a glimpse into life, facilities, and care programs at Care Home Recovery.",
+    title: "Gallery | Care Home Rehabilitation Centre Garia, Kolkata",
+    description: "Photos and videos of Care Home Rehabilitation Centre in Garia, Kolkata: Patient care rooms, physiotherapy sessions, doctor visits, and elder care facilities.",
+    keywords: "Care Home Gallery Kolkata, Rehabilitation Centre Garia Photos, Patient Care Home Facilities Kolkata, Stroke Rehabilitation Video Kolkata",
+    canonical: "https://www.carehomekolkata.in/gallery",
   });
   
   const [lightbox, setLightbox] = useState<{

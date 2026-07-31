@@ -49,8 +49,10 @@ const CounterItem = ({
 
 const HomePage = () => {
   useSEO({
-    title: "Care Home | Professional De-Addiction & Rehab",
-    description: "Supporting individuals and families through professional de-addiction and rehabilitation services in a safe and structured environment.",
+    title: "Care Home Rehabilitation | Best Rehabilitation Centre in Garia, Kolkata | 24x7 Patient & Elder Care",
+    description: "Care Home Rehabilitation in Garia, Kolkata offers 24x7 nursing care, stroke rehabilitation, elderly care, physiotherapy, post-operative recovery, dementia care, and long-term patient care in a safe and compassionate environment.",
+    keywords: "Rehabilitation Centre in Kolkata, Care Home Rehabilitation Kolkata, Rehabilitation Centre in Garia, Care Home Kolkata, Patient Care Home Kolkata, Elder Care Home Kolkata, Stroke Rehabilitation Centre Kolkata, Physiotherapy Rehabilitation Centre Kolkata, 24x7 Nursing Care Kolkata, Senior Citizen Care Home Kolkata, Post Surgery Rehabilitation Kolkata, Dementia Care Home Kolkata, Bedridden Patient Care Home Kolkata, Care Home near Garia Station, Rehab Centre near Panchpota",
+    canonical: "https://www.carehomekolkata.in/",
   });
 
   return (
@@ -58,16 +60,16 @@ const HomePage = () => {
       {/* Hero Slideshow */}
       <HomeHeroSection
         images={[heroHome1, heroHome2, heroHome3, heroHome4]}
-        title="Compassionate Care & Structured Recovery"
-        subtitle="Supporting individuals and families through professional de-addiction and rehabilitation services in a safe and structured environment."
+        title="Best Care Home Rehabilitation Centre in Garia, Kolkata"
+        subtitle="Premier 24x7 Patient Care Home & Rehabilitation Centre in Kolkata specializing in stroke recovery, elder care, physiotherapy, dementia care, and de-addiction rehabilitation in South 24 Parganas."
       >
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="tel:6289424181"
-            aria-label="Call Care Home at 6289424181"
+            href="tel:7980611010"
+            aria-label="Call Care Home Rehabilitation Centre Kolkata at 7980611010"
             className="inline-flex items-center gap-2 bg-secondary hover:bg-yellow-400 text-secondary-foreground px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-yellow-400/30 active:scale-95"
           >
-            Call Now
+            Call 7980611010 Now
           </a>
           <Link
             to="/contact"
@@ -82,10 +84,10 @@ const HomePage = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <CounterItem end={125} suffix="+" label="Families Supported" />
-            <CounterItem end={24} suffix="/7" label="Care Assistance" />
-            <CounterItem end={15} suffix="+" label="Medical Professionals" />
-            <CounterItem end={10} suffix="+" label="Recovery Programs" />
+            <CounterItem end={125} suffix="+" label="Families Supported in Kolkata" />
+            <CounterItem end={24} suffix="/7" label="Medical & Nursing Care" />
+            <CounterItem end={15} suffix="+" label="Specialized Medical Experts" />
+            <CounterItem end={10} suffix="+" label="Rehabilitation Programs" />
           </div>
         </div>
       </section>
@@ -97,7 +99,7 @@ const HomePage = () => {
             <FadeIn direction="left">
               <img
                 src={heroAbout}
-                alt="Care Home medical team"
+                alt="Rehabilitation Centre in Kolkata - Care Home Facility in Garia"
                 width="800"
                 height="600"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
@@ -110,7 +112,7 @@ const HomePage = () => {
                   <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg mx-auto mb-2">
                     <img
                       src={founderSaibal}
-                      alt="Saibal Sanyal"
+                      alt="Saibal Sanyal - Care Home Founder & Recovery Coach Kolkata"
                       width="96"
                       height="96"
                       className="w-full h-full object-cover object-top"
@@ -127,7 +129,7 @@ const HomePage = () => {
                   <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg mx-auto mb-2">
                     <img
                       src={founderSoumya}
-                      alt="Soumya Suvra Sengupta"
+                      alt="Soumya Suvra Sengupta - Co-Founder Care Home Garia Kolkata"
                       width="96"
                       height="96"
                       className="w-full h-full object-cover object-top"
@@ -142,23 +144,22 @@ const HomePage = () => {
             </FadeIn>
             <FadeIn direction="right">
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
-                About Us
+                Leading Care Home in Kolkata
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-6">
-                Professional De-Addiction & Rehabilitation Since 2022
+                Top Rated Rehabilitation Centre in Garia, Kolkata
               </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                <strong>CARE HOME Rehabilitation Centre</strong> is a premier medical care home located at Panchpota Dhalai Bridge near Gomkol Bus Stop on Garia Station Road, Kolkata. Since 2022, we have delivered compassionate elder care, 24/7 nursing care, stroke rehabilitation, and comprehensive patient care services for families across Kolkata and South 24 Parganas.
+              </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                CARE HOME has been providing structured de-addiction and
-                rehabilitation services since 2022, delivering holistic and
-                evidence-based recovery programs for individuals suffering from
-                substance use disorders. Over 125 families have benefited from
-                our interventions.
+                Our facility offers specialized stroke recovery, post-operative rehabilitation, dementia care, and bedridden patient care under round-the-clock medical supervision by experienced doctors, physiotherapists, and nurses.
               </p>
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
               >
-                Learn More <ArrowRight aria-hidden="true" className="w-4 h-4" />
+                Learn More About Our Rehab Centre <ArrowRight aria-hidden="true" className="w-4 h-4" />
               </Link>
             </FadeIn>
           </div>
@@ -169,20 +170,20 @@ const HomePage = () => {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4 text-center">
           <FadeIn direction="down" className="text-secondary font-semibold text-sm uppercase tracking-wider block">
-            Our Services
+            Specialized Medical & Rehab Services
           </FadeIn>
           <FadeIn direction="up">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-12">
-              Comprehensive Recovery Care
+              Comprehensive Care Home Rehabilitation Services in Kolkata
             </h2>
           </FadeIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Detoxification Support */}
+            {/* Stroke & Physiotherapy Rehab */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={detoxification}
-                  alt="Detoxification Support"
+                  alt="Stroke Rehabilitation Centre Kolkata & Physiotherapy"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -194,19 +195,19 @@ const HomePage = () => {
                 <Heart aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Detoxification Support
+                Stroke Rehabilitation & Physiotherapy
               </h3>
-              <p className="text-muted-foreground">
-                Medically supervised detox and withdrawal management
+              <p className="text-muted-foreground text-sm">
+                Advanced stroke recovery programs & daily physiotherapy rehabilitation in South Kolkata.
               </p>
             </div>
 
-            {/* Counselling & Therapy */}
+            {/* Elder & Patient Care Home */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={counselling}
-                  alt="Counselling & Therapy"
+                  alt="Elder Care Home & Senior Citizen Rehabilitation Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -218,19 +219,19 @@ const HomePage = () => {
                 <Users aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Counselling & Therapy
+                Elder Care & Senior Citizen Care Home
               </h3>
-              <p className="text-muted-foreground">
-                Individual and group therapy sessions
+              <p className="text-muted-foreground text-sm">
+                Home-like long-term residential nursing & elder care home in Garia, Kolkata.
               </p>
             </div>
 
-            {/* 24/7 Medical Care */}
+            {/* 24/7 Medical Nursing Care */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={medicalcare}
-                  alt="24/7 Medical Care"
+                  alt="24 Hours Bedridden Patient Care Home Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -242,19 +243,19 @@ const HomePage = () => {
                 <Clock aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                24/7 Medical Care
+                24/7 Patient Care & Nursing
               </h3>
-              <p className="text-muted-foreground">
-                Round-the-clock medical monitoring and assistance
+              <p className="text-muted-foreground text-sm">
+                Round-the-clock medical monitoring for bedridden and post-operative patients.
               </p>
             </div>
 
-            {/* Social Reintegration */}
+            {/* Dementia & Post-Surgery Recovery */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={socialreintegration}
-                  alt="Social Reintegration"
+                  alt="Dementia Care Home & Post Surgery Rehabilitation Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -266,10 +267,10 @@ const HomePage = () => {
                 <Award aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Social Reintegration
+                Dementia & Post-Surgery Care
               </h3>
-              <p className="text-muted-foreground">
-                Programs for a meaningful return to society
+              <p className="text-muted-foreground text-sm">
+                Specialized Alzheimer's, dementia care, and post-hospital recovery in Kolkata.
               </p>
             </div>
           </div>
@@ -285,18 +286,13 @@ const HomePage = () => {
         <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
           <FadeIn direction="up">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-background mb-8">
-              Understanding Addiction
+              De-Addiction & Medical Rehabilitation in Kolkata
             </h2>
             <p className="text-background/90 text-lg leading-relaxed mb-6">
-              Addiction is a chronic and relapsing disease characterized by
-              compulsive drug seeking and substance use despite harmful
-              consequences. Its disruptive impact affects the physical,
-              psychological, and social aspects of a person's life.
+              Substance dependence and severe medical conditions require structured, empathetic, and evidence-based rehabilitation. CARE HOME provides a supportive environment in Garia, Kolkata to restore physical health and emotional well-being.
             </p>
             <p className="text-background/80 text-lg leading-relaxed">
-              Without proper treatment and rehabilitation, addiction can severely
-              affect an individual's health, relationships, and overall quality of
-              life.
+              Serving Garia, Narendrapur, Sonarpur, Kamalgazi, Baghajatin, Patuli, and Greater Kolkata with 24/7 care assistance.
             </p>
           </FadeIn>
         </div>
@@ -308,24 +304,25 @@ const HomePage = () => {
           <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
-                Treatment Approach
+                Our Comprehensive Rehabilitation Programs
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-6">
-                Evidence-Based Recovery Methods
+                Evidence-Based Treatment & Medical Care
               </h2>
               <p className="text-muted-foreground text-lg">
-                Detoxification, de-addiction, and rehabilitation are the most
-                effective and scientific methods to overcome addiction.
+                Physiotherapy, 24/7 nursing, psychological therapy, and de-addiction treatments at Kolkata's trusted care home.
               </p>
             </FadeIn>
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                "Detoxification",
-                "Counselling",
-                "Psychological Therapy",
-                "Medical Supervision",
-                "Social Reintegration Support",
-                "12 Step Recovery Program",
+                "Stroke Rehabilitation & Recovery",
+                "24x7 Patient Care & Nursing",
+                "Senior Citizen & Elder Care Home",
+                "Physiotherapy & Mobility Rehab",
+                "Post-Surgery & Orthopedic Recovery",
+                "Dementia & Alzheimer's Care",
+                "Medically Supervised Detoxification",
+                "12-Step & Psychological Therapy",
               ].map((item, i) => (
                 <FadeIn
                   key={i}
@@ -347,10 +344,10 @@ const HomePage = () => {
           <div className="text-center mb-12">
             <FadeIn>
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">
-                Our Team
+                Expert Medical Team
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2">
-                Meet Our Dedicated Team
+                Meet Our Experienced Doctors & Rehabilitation Specialists
               </h2>
             </FadeIn>
           </div>
@@ -399,7 +396,7 @@ const HomePage = () => {
           <FadeIn direction="up" className="mt-12 max-w-4xl mx-auto">
             <img
               src={teamFull}
-              alt="CARE HOME Full Team"
+              alt="Care Home Rehabilitation Centre Kolkata Dedicated Staff and Team"
               width="1200"
               height="800"
               className="rounded-2xl shadow-xl w-full object-cover aspect-video sm:aspect-auto"
@@ -407,7 +404,7 @@ const HomePage = () => {
               decoding="async"
             />
             <p className="text-center text-muted-foreground mt-4 font-medium">
-              The CARE HOME Team – Service with Compassion
+              The CARE HOME Team – Compassionate Rehabilitation & Nursing Care in Kolkata
             </p>
           </FadeIn>
         </div>
@@ -417,25 +414,24 @@ const HomePage = () => {
       <section className="py-24 bg-primary">
         <FadeIn className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
-            Take the First Step Towards Recovery
+            Looking for the Best Rehabilitation Centre in Garia, Kolkata?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Our compassionate team is ready to help you or your loved one begin
-            the journey to recovery.
+            Our 24x7 care team is ready to assist your family with stroke recovery, elder care, post-hospital recovery, and patient care home admission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:6289424181"
-              aria-label="Call Care Home at 6289424181"
+              href="tel:7980611010"
+              aria-label="Call Care Home Rehabilitation Centre Kolkata at 7980611010"
               className="inline-flex items-center justify-center gap-2 bg-background text-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:opacity-90 transition-opacity"
             >
-              Call Now
+              Call 7980611010 Now
             </a>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-foreground/10 transition-colors"
             >
-              Contact Us
+              Contact Our Rehab Experts
             </Link>
           </div>
         </FadeIn>
