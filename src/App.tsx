@@ -13,6 +13,8 @@ const AccommodationPage = lazy(() => import("./pages/AccommodationPage"));
 const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const CertificatesPage = lazy(() => import("./pages/CertificatesPage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
+const SocialActivitiesPage = lazy(() => import("./pages/SocialActivitiesPage"));
+const DrugAbuseDayDetailsPage = lazy(() => import("./pages/DrugAbuseDayDetailsPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -34,6 +36,8 @@ const App = () => (
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/certificates" element={<CertificatesPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/social-activities" element={<SocialActivitiesPage />} />
+              <Route path="/social-activities/drug-abuse-day" element={<DrugAbuseDayDetailsPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />

@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-background/20 text-center text-background/50 text-sm">
-          © {new Date().getFullYear()} CARE HOME. All rights reserved. ||
+          © {new Date().getFullYear()} CARE HOME.||
           Developed & Maintained by{" "}
           <a
             href="https://teamdeoskolkata.in/"

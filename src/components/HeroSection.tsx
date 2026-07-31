@@ -12,7 +12,7 @@ const HeroSection = ({ image, title, subtitle, children }: HeroSectionProps) => 
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="absolute inset-0 bg-foreground/60" />
-      <div className="relative z-10 container mx-auto px-4 text-center py-20">
+      <div className="relative z-10 container mx-auto px-4 text-center pt-28 pb-16 md:pt-36 md:pb-20">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-secondary mb-6 animate-fade-in-up">
           {title}
         </h1>

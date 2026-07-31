@@ -3,9 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import { useCountUp } from "@/hooks/useScrollReveal";
 import { useSEO } from "@/hooks/useSEO";
 import { FadeIn, StaggerContainer } from "@/components/animations/FadeIn";
-import heroHome from "@/assets/gallery-counselling.jpg";
-import heroHome2 from "@/assets/gallery-group-session.jpg";
-import heroHome3 from "@/assets/gallery-na-meeting.jpg";
+import heroHome1 from "@/assets/photos/Photo0.jpeg";
+import heroHome2 from "@/assets/photos/Photo2.jpeg";
+import heroHome3 from "@/assets/photos/Photo8.jpeg";
+import heroHome4 from "@/assets/photos/Photo19.jpeg";
 import heroAbout from "@/assets/gallery-group-session.jpg";
 import parallaxAddiction from "@/assets/gallery-doctor.jpg";
 import founderSaibal from "@/assets/founder-saibal-home.jpeg";
@@ -56,7 +57,7 @@ const HomePage = () => {
     <div>
       {/* Hero Slideshow */}
       <HomeHeroSection
-        images={[heroHome, heroHome2, heroHome3]}
+        images={[heroHome1, heroHome2, heroHome3, heroHome4]}
         title="Compassionate Care & Structured Recovery"
         subtitle="Supporting individuals and families through professional de-addiction and rehabilitation services in a safe and structured environment."
       >

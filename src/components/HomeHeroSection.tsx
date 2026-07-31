@@ -63,7 +63,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-32 md:py-40 text-left max-w-5xl">
+      <div className="relative z-10 container mx-auto px-4 pt-28 pb-20 md:pt-36 md:pb-24 text-left max-w-5xl">
         {/* Label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
-          className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-2xl mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-2xl mb-10 leading-relaxed bg-background/20 backdrop-blur-sm border border-background/40 p-6 rounded-xl shadow-lg shadow-black/20"
         >
           {subtitle}
         </motion.p>
@@ -134,8 +134,8 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
             { value: "3+", label: "Years of Service" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col">
-              <span className="text-2xl md:text-3xl font-heading font-bold text-primary">{stat.value}</span>
-              <span className="text-background/70 text-sm font-medium">{stat.label}</span>
+              <span className="text-2xl md:text-3xl font-heading font-bold text-secondary drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">{stat.value}</span>
+              <span className="text-white/80 text-sm font-medium drop-shadow-md">{stat.label}</span>
             </div>
           ))}
         </motion.div>
