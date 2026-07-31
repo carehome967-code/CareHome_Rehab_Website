@@ -5,7 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { FadeIn, StaggerContainer } from "@/components/animations/FadeIn";
 import heroHome1 from "@/assets/photos/Photo0.jpeg";
 import heroHome2 from "@/assets/photos/Photo2.jpeg";
-import heroHome3 from "@/assets/photos/Photo8.jpeg";
+import heroHome3 from "@/assets/photos/photo8.jpeg";
 import heroHome4 from "@/assets/photos/Photo19.jpeg";
 import heroAbout from "@/assets/gallery-group-session.jpg";
 import parallaxAddiction from "@/assets/gallery-doctor.jpg";
