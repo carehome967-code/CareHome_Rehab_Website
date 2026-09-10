@@ -11,9 +11,9 @@ import { CheckCircle, Target, Lightbulb, Heart, Users } from "lucide-react";
 
 const AboutPage = () => {
   useSEO({
-    title: "About Us | Leading Rehabilitation Centre in Garia, Kolkata | Care Home",
-    description: "Learn about Care Home Rehabilitation Centre in Garia, Kolkata. Premier provider of 24/7 patient care, elder care home, stroke rehabilitation, and medical recovery in South 24 Parganas.",
-    keywords: "Best Rehabilitation Centre in Kolkata, Care Home in Garia Kolkata, Rehabilitation Centre in Garia, Patient Care Home Kolkata, Elder Care Home Kolkata, Stroke Rehabilitation Centre Kolkata, Home Like Rehabilitation Centre Kolkata, Medical Care Home South Kolkata, Senior Citizen Care Home Kolkata",
+    title: "About Us | Detoxification, De Addiction & Old Age Retirement Home Kolkata",
+    description: "Learn about Care Home Rehabilitation Centre in Garia, Kolkata: Specialists in Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, Mild Psychological Disorder care, and Old age / Retirement Home living.",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home in Garia",
     canonical: "https://www.carehomekolkata.in/about",
   });
 
@@ -22,7 +22,7 @@ const AboutPage = () => {
       <HeroSection
         image={heroAbout}
         title="About Care Home Rehabilitation Centre"
-        subtitle="Premier 24/7 Patient Care & Medical Rehabilitation Centre in Garia, Kolkata since 2022"
+        subtitle="Premier 24/7 Care Home & Rehabilitation Centre in Garia, Kolkata since 2022"
       />
 
       {/* About Content */}
@@ -36,7 +36,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-heading font-bold mb-6">Our Story & Medical Mission</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">CARE HOME Rehabilitation Centre</strong> is a trusted healthcare institution located at Panchpota Dhalai Bridge, Garia Station Road, Kolkata. Since 2022, we have specialized in delivering holistic <strong className="text-foreground">stroke rehabilitation, 24x7 patient care, elder care home services, physiotherapy, dementia care, and de-addiction recovery</strong>.
+                  <strong className="text-foreground">CARE HOME Rehabilitation Centre</strong> is a trusted healthcare institution located at Panchpota Dhalai Bridge, Garia Station Road, Kolkata. Since 2022, we have specialized in delivering medically supervised <strong className="text-foreground">Detoxification</strong>, structured <strong className="text-foreground">De Addiction</strong> therapies, comprehensive <strong className="text-foreground">Rehabilitation for addiction, alcoholism and all Co-Occurring disorders</strong>, specialized treatment for <strong className="text-foreground">Mild Psychological Disorder</strong>, and compassionate <strong className="text-foreground">Old age / Retirement Home</strong> living.
                 </p>
                 <p>
                   Serving families across <strong className="text-foreground">Garia, Narendrapur, Sonarpur, Kamalgazi, Baghajatin, Patuli, and South 24 Parganas</strong>, over 125 families have trusted Care Home for dedicated post-operative recovery, bedridden patient assistance, and long-term medical care.

@@ -15,7 +15,7 @@ const Footer = () => {
               className="h-20 md:h-24 w-auto mb-4"
             />
             <p className="text-background/70 mb-6 leading-relaxed">
-              Premier 24/7 patient care home and rehabilitation centre in Garia, Kolkata offering stroke rehabilitation, elder care, physiotherapy, dementia care, and de-addiction recovery.
+              Premier 24/7 care home and rehabilitation centre in Garia, Kolkata offering Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and compassionate Old age / Retirement Home living.
             </p>
             <div className="space-y-3">
               <a

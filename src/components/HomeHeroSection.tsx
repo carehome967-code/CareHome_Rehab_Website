@@ -22,11 +22,9 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
 
   return (
     <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Preload images to prevent flash on first cycle */}
+      {/* High-priority pre-fetch for LCP (1st slide only) */}
       <div className="hidden" aria-hidden="true">
-        {images.map((src, idx) => (
-          <img key={idx} src={src} alt="" loading="eager" decoding="sync" />
-        ))}
+        <img src={images[0]} alt="" fetchPriority="high" loading="eager" decoding="async" />
       </div>
 
       {/* Background Slideshow */}
@@ -38,9 +36,17 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.96 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${images[currentIndex]})` }}
-          />
+            className="absolute inset-0"
+          >
+            <img
+              src={images[currentIndex]}
+              alt=""
+              fetchPriority={currentIndex === 0 ? "high" : "auto"}
+              loading={currentIndex === 0 ? "eager" : "lazy"}
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
         </AnimatePresence>
 
         {/* Dark gradient overlay */}

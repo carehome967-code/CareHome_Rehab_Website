@@ -7,27 +7,41 @@ import { X, Play, Image as ImageIcon, Video, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { LazyImage, LazyVideo } from "@/components/LazyMedia";
 
-// Using Vite's import.meta.glob to load all media dynamically
-const imageModules = import.meta.glob<{ default: string }>([
+import serviceImage from "@/assets/ServiceImage.jpeg";
+
+// Using Vite's import.meta.glob with import: 'default' to resolve media URLs cleanly
+const imageModules = import.meta.glob<string>([
   '@/assets/gallery/images/*.{jpeg,jpg,png,webp}',
   '@/assets/photos/*.{jpeg,jpg,png,webp}'
-], { eager: true });
+], { eager: true, import: 'default' });
 
-const videoModules = import.meta.glob<{ default: string }>([
+const videoModules = import.meta.glob<string>([
   '@/assets/gallery/videos/*.{mp4,webm,ogg}',
   '@/assets/photos/*.{mp4,webm,ogg}'
-], { eager: true });
+], { eager: true, import: 'default' });
 
-const photoItems = Object.entries(imageModules).map(([path, module], index) => ({
-  src: module.default,
+const dynamicPhotoItems = Object.entries(imageModules).map(([path, url], index) => ({
+  src: url,
   alt: `Gallery Photo ${index + 1}`,
-  type: "image"
+  type: "image" as const,
+  className: ""
 }));
 
-const videoItems = Object.entries(videoModules).map(([path, module], index) => ({
-  src: module.default,
+const photoItems = [
+  {
+    src: serviceImage,
+    alt: "Care Home Rehabilitation & Patient Services Facility Kolkata",
+    type: "image" as const,
+    className: "object-left"
+  },
+  ...dynamicPhotoItems
+];
+
+const videoItems = Object.entries(videoModules).map(([path, url], index) => ({
+  src: url,
   alt: `Gallery Video ${index + 1}`,
-  type: "video"
+  type: "video" as const,
+  className: ""
 }));
 
 const mediaItems = [...photoItems, ...videoItems];
@@ -35,8 +49,8 @@ const mediaItems = [...photoItems, ...videoItems];
 const GalleryPage = () => {
   useSEO({
     title: "Gallery | Care Home Rehabilitation Centre Garia, Kolkata",
-    description: "Photos and videos of Care Home Rehabilitation Centre in Garia, Kolkata: Patient care rooms, physiotherapy sessions, doctor visits, and elder care facilities.",
-    keywords: "Care Home Gallery Kolkata, Rehabilitation Centre Garia Photos, Patient Care Home Facilities Kolkata, Stroke Rehabilitation Video Kolkata",
+    description: "Photos and videos of Care Home Rehabilitation Centre in Garia, Kolkata: Detoxification rooms, De Addiction counseling sessions, Old age / Retirement Home facilities, and medical care.",
+    keywords: "Care Home Gallery Kolkata, Detoxification Centre Photos, De Addiction Facility Photos, Old age Retirement Home Kolkata, Rehabilitation Video Kolkata",
     canonical: "https://www.carehomekolkata.in/gallery",
   });
   
@@ -118,7 +132,7 @@ const GalleryPage = () => {
                     <LazyImage
                       src={item.src}
                       alt={item.alt}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className={cn("w-full h-full object-cover transition-transform duration-500 group-hover:scale-110", item.className)}
                     />
                   </FadeIn>
                 ))}

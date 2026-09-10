@@ -17,7 +17,10 @@ const HeroSection = ({ image, title, subtitle, children }: HeroSectionProps) => 
           {title}
         </h1>
         {subtitle && (
-          <p className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p
+            className="text-base sm:text-lg md:text-xl text-primary font-bold max-w-3xl mx-auto mb-8 animate-fade-in-up leading-relaxed bg-background/20 backdrop-blur-sm border border-background/40 p-6 rounded-xl shadow-lg shadow-black/20"
+            style={{ animationDelay: "0.2s" }}
+          >
             {subtitle}
           </p>
         )}

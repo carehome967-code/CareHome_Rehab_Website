@@ -18,11 +18,39 @@ import { Slider } from "@radix-ui/react-slider";
 
 const services = [
   { 
+    icon: Sparkles, 
+    title: "Medically Supervised Detoxification", 
+    desc: <><strong className="text-foreground">Medically supervised Detoxification</strong> conducted under round-the-clock clinical supervision to ensure safe, humane, and comfortable management of withdrawal symptoms in Kolkata.</>,
+    image: detoxificationImg,
+    alt: "Medically Supervised Detoxification Centre Kolkata"
+  },
+  { 
+    icon: Activity, 
+    title: "De Addiction & Relapse Prevention", 
+    desc: <>Comprehensive <strong className="text-foreground">De Addiction treatment</strong> utilizing 12-Step recovery models, individual therapy, and group counseling for sustained sobriety.</>,
+    image: housekeepingImg,
+    alt: "De Addiction Centre Kolkata"
+  },
+  { 
     icon: Heart, 
-    title: "Stroke Rehabilitation & Physiotherapy", 
-    desc: <>Advanced <strong className="text-foreground">stroke recovery programs & daily physiotherapy</strong> conducted by experienced physiotherapists in Kolkata to restore motor skills, mobility, and speech for post-stroke patients.</>,
+    title: "Rehabilitation for Addiction, Alcoholism & Co-Occurring Disorders", 
+    desc: <>Specialized <strong className="text-foreground">Rehabilitation for addiction, alcoholism and all Co-Occurring disorders</strong> providing psychiatric care, dual-diagnosis treatment, and emotional healing.</>,
     image: dailyLivingImg,
-    alt: "Stroke Rehabilitation Centre Kolkata & Physiotherapy in Garia"
+    alt: "Rehabilitation for addiction, alcoholism and all Co-Occurring disorders Kolkata"
+  },
+  { 
+    icon: MessageCircle, 
+    title: "Mild Psychological Disorder & Mental Wellness", 
+    desc: <>Professional psychiatric evaluation and therapeutic care for patients experiencing <strong className="text-foreground">Mild Psychological Disorder</strong>, anxiety, depression, mood instability, and behavioral challenges.</>,
+    image: counsellingImg,
+    alt: "Mild Psychological Disorder Care & Therapy Kolkata"
+  },
+  { 
+    icon: Users, 
+    title: "Old Age & Retirement Home Living", 
+    desc: <>Peaceful, dignified, and comfortable residential care at our premier <strong className="text-foreground">Old age / Retirement Home</strong> facility in Garia, Kolkata, equipped with 24/7 nursing and medical support.</>,
+    image: socialEngagementImg,
+    alt: "Old age Retirement Home Care Kolkata"
   },
   { 
     icon: Activity, 
@@ -32,47 +60,19 @@ const services = [
     alt: "24 Hours Bedridden Patient Care Home Kolkata"
   },
   { 
-    icon: Users, 
-    title: "Elder Care & Senior Citizen Living", 
-    desc: <>Compassionate <strong className="text-foreground">elderly care and old age care home services</strong> in South Kolkata providing structured routines, nutritious meals, and medical monitoring.</>,
-    image: socialEngagementImg,
-    alt: "Elder Care Home Kolkata & Senior Citizen Rehabilitation"
-  },
-  { 
-    icon: Droplets, 
-    title: "Post-Surgery & Orthopedic Rehabilitation", 
-    desc: <><strong className="text-foreground">Post-hospital recovery care</strong> and joint replacement rehabilitation tailored for rapid healing in a safe, hygienic environment.</>,
-    image: detoxificationImg,
-    alt: "Post Surgery Rehabilitation Kolkata"
-  },
-  { 
-    icon: MessageCircle, 
-    title: "Dementia & Alzheimer's Care", 
-    desc: <>Specialized cognitive therapy and compassionate memory care for individuals suffering from <strong className="text-foreground">Dementia and Alzheimer's disease</strong>.</>,
-    image: counsellingImg,
-    alt: "Dementia Care Home Kolkata"
-  },
-  { 
     icon: Utensils, 
     title: "Nutritious Diet & Palliative Support", 
     desc: <>Customized dietary plans and <strong className="text-foreground">palliative care</strong> for chronic conditions to support physical healing and pain management.</>,
     image: healthyFoodsImg,
     alt: "Palliative Care Centre Kolkata"
   },
-  { 
-    icon: Sparkles, 
-    title: "De-Addiction & Medically Supervised Recovery", 
-    desc: <><strong className="text-foreground">Medically supervised detoxification</strong> and 12-Step recovery counseling for substance use disorders in Kolkata.</>,
-    image: housekeepingImg,
-    alt: "Rehabilitation Centre in Kolkata - De-Addiction Services"
-  },
 ];
 
 const ServicesPage = () => {
   useSEO({
-    title: "Rehabilitation Services in Kolkata | Stroke, Elder & Physiotherapy in Garia",
-    description: "Explore comprehensive medical rehabilitation services at Care Home in Garia, Kolkata: Stroke recovery, physiotherapy, post-surgery rehab, dementia care, and 24/7 patient care.",
-    keywords: "Stroke Rehabilitation Centre Kolkata, Physiotherapy Rehabilitation Centre Kolkata, Elder Care Home Kolkata, Post Surgery Rehabilitation Kolkata, Dementia Care Home Kolkata, Palliative Care Centre Kolkata, 24 Hours Patient Care Home Kolkata, Rehabilitation Centre in Garia",
+    title: "Services | Detoxification, De Addiction, Old Age & Retirement Home Kolkata",
+    description: "Care Home Kolkata services: Medically supervised Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, Mild Psychological Disorder care, and Old age / Retirement Home living.",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre Kolkata, 24/7 Nursing Care Garia",
     canonical: "https://www.carehomekolkata.in/services",
   });
 
@@ -80,8 +80,8 @@ const ServicesPage = () => {
     <div>
       <HeroSection
         image={heroServices}
-        title="Comprehensive Rehabilitation Services in Garia, Kolkata"
-        subtitle="Dedicated 24/7 medical care, stroke recovery, elder care, and physiotherapy programs in South 24 Parganas"
+        title="Comprehensive Medical & Rehabilitation Services in Kolkata"
+        subtitle="Specialized in Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, Mild Psychological Disorder treatment, and Old age / Retirement Home care in Garia."
       />
 
       <section className="py-24 bg-card">

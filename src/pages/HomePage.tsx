@@ -49,9 +49,9 @@ const CounterItem = ({
 
 const HomePage = () => {
   useSEO({
-    title: "Care Home Rehabilitation | Best Rehabilitation Centre in Garia, Kolkata | 24x7 Patient & Elder Care",
-    description: "Care Home Rehabilitation in Garia, Kolkata offers 24x7 nursing care, stroke rehabilitation, elderly care, physiotherapy, post-operative recovery, dementia care, and long-term patient care in a safe and compassionate environment.",
-    keywords: "Rehabilitation Centre in Kolkata, Care Home Rehabilitation Kolkata, Rehabilitation Centre in Garia, Care Home Kolkata, Patient Care Home Kolkata, Elder Care Home Kolkata, Stroke Rehabilitation Centre Kolkata, Physiotherapy Rehabilitation Centre Kolkata, 24x7 Nursing Care Kolkata, Senior Citizen Care Home Kolkata, Post Surgery Rehabilitation Kolkata, Dementia Care Home Kolkata, Bedridden Patient Care Home Kolkata, Care Home near Garia Station, Rehab Centre near Panchpota",
+    title: "Care Home Rehabilitation | Detoxification, De Addiction, Old Age & Retirement Home Kolkata",
+    description: "Care Home Rehabilitation in Garia, Kolkata offers medically supervised Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and 24x7 Old age / Retirement Home care.",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home Rehabilitation Kolkata, Care Home in Garia",
     canonical: "https://www.carehomekolkata.in/",
   });
 
@@ -61,7 +61,7 @@ const HomePage = () => {
       <HomeHeroSection
         images={[heroHome1, heroHome2, heroHome3, heroHome4]}
         title="Best Care Home Rehabilitation Centre in Garia, Kolkata"
-        subtitle="Premier 24x7 Patient Care Home & Rehabilitation Centre in Kolkata specializing in stroke recovery, elder care, physiotherapy, dementia care, and de-addiction rehabilitation in South 24 Parganas."
+        subtitle="Premier 24x7 Care Home in Kolkata specializing in Detoxification, De Addiction, Rehabilitation for addiction/ alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and Old age / Retirement Home care."
       >
         <div className="flex flex-col sm:flex-row gap-4">
           <a
@@ -150,10 +150,10 @@ const HomePage = () => {
                 Top Rated Rehabilitation Centre in Garia, Kolkata
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong>CARE HOME Rehabilitation Centre</strong> is a premier medical care home located at Panchpota Dhalai Bridge near Gomkol Bus Stop on Garia Station Road, Kolkata. Since 2022, we have delivered compassionate elder care, 24/7 nursing care, stroke rehabilitation, and comprehensive patient care services for families across Kolkata and South 24 Parganas.
+                <strong>CARE HOME Rehabilitation Centre</strong> is a premier medical care home located at Panchpota Dhalai Bridge near Gomkol Bus Stop on Garia Station Road, Kolkata. Since 2022, we have specialized in delivering medically supervised <strong>Detoxification</strong>, comprehensive <strong>De Addiction</strong> programs, <strong>Rehabilitation for addiction, alcoholism and all Co-Occurring disorders</strong>, psychiatric support for <strong>Mild Psychological Disorder</strong>, and compassionate <strong>Old age / Retirement Home</strong> living.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our facility offers specialized stroke recovery, post-operative rehabilitation, dementia care, and bedridden patient care under round-the-clock medical supervision by experienced doctors, physiotherapists, and nurses.
+                Our facility provides round-the-clock medical supervision, personalized psychological counseling, post-operative rehabilitation, and elder care under the supervision of experienced doctors, psychiatrists, and nurses.
               </p>
               <Link
                 to="/about"
@@ -174,16 +174,16 @@ const HomePage = () => {
           </FadeIn>
           <FadeIn direction="up">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-12">
-              Comprehensive Care Home Rehabilitation Services in Kolkata
+              Comprehensive Medical & Rehabilitation Care in Kolkata
             </h2>
           </FadeIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Stroke & Physiotherapy Rehab */}
+            {/* Detoxification & De Addiction */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={detoxification}
-                  alt="Stroke Rehabilitation Centre Kolkata & Physiotherapy"
+                  alt="Detoxification & De Addiction Centre Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -195,19 +195,19 @@ const HomePage = () => {
                 <Heart aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Stroke Rehabilitation & Physiotherapy
+                Detoxification & De Addiction
               </h3>
               <p className="text-muted-foreground text-sm">
-                Advanced stroke recovery programs & daily physiotherapy rehabilitation in South Kolkata.
+                Medically supervised Detoxification and 12-Step De Addiction recovery in Kolkata.
               </p>
             </div>
 
-            {/* Elder & Patient Care Home */}
+            {/* Rehabilitation for Addiction, Alcoholism & Co-Occurring Disorders */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={counselling}
-                  alt="Elder Care Home & Senior Citizen Rehabilitation Kolkata"
+                  alt="Rehabilitation for addiction alcoholism and all Co Occuring disorders Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -219,19 +219,19 @@ const HomePage = () => {
                 <Users aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Elder Care & Senior Citizen Care Home
+                Rehabilitation for Addiction & Co-Occurring Disorders
               </h3>
               <p className="text-muted-foreground text-sm">
-                Home-like long-term residential nursing & elder care home in Garia, Kolkata.
+                Complete Rehabilitation for addiction, alcoholism and all Co-Occurring disorders.
               </p>
             </div>
 
-            {/* 24/7 Medical Nursing Care */}
+            {/* Mild Psychological Disorder */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={medicalcare}
-                  alt="24 Hours Bedridden Patient Care Home Kolkata"
+                  alt="Mild Psychological Disorder Care & Mental Health Therapy Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -243,19 +243,19 @@ const HomePage = () => {
                 <Clock aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                24/7 Patient Care & Nursing
+                Mild Psychological Disorder Care
               </h3>
               <p className="text-muted-foreground text-sm">
-                Round-the-clock medical monitoring for bedridden and post-operative patients.
+                Therapy and psychiatric care for Mild Psychological Disorder, anxiety, and depression.
               </p>
             </div>
 
-            {/* Dementia & Post-Surgery Recovery */}
+            {/* Old Age / Retirement Home */}
             <div className="healthcare-card snake-border-card p-8 text-center group z-0">
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={socialreintegration}
-                  alt="Dementia Care Home & Post Surgery Rehabilitation Kolkata"
+                  alt="Old age Retirement Home Care Garia Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -267,10 +267,10 @@ const HomePage = () => {
                 <Award aria-hidden="true" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-semibold mb-3">
-                Dementia & Post-Surgery Care
+                Old Age / Retirement Home
               </h3>
               <p className="text-muted-foreground text-sm">
-                Specialized Alzheimer's, dementia care, and post-hospital recovery in Kolkata.
+                Compassionate residential Old age / Retirement Home living with 24/7 nursing supervision.
               </p>
             </div>
           </div>
@@ -315,14 +315,14 @@ const HomePage = () => {
             </FadeIn>
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                "Stroke Rehabilitation & Recovery",
-                "24x7 Patient Care & Nursing",
-                "Senior Citizen & Elder Care Home",
-                "Physiotherapy & Mobility Rehab",
-                "Post-Surgery & Orthopedic Recovery",
-                "Dementia & Alzheimer's Care",
                 "Medically Supervised Detoxification",
-                "12-Step & Psychological Therapy",
+                "De Addiction Treatment & Counseling",
+                "Rehabilitation for addiction, alcoholism & Co-Occurring disorders",
+                "Mild Psychological Disorder Care & Therapy",
+                "Old age / Retirement Home Living",
+                "24x7 Patient Care & Nursing",
+                "Physiotherapy & Mobility Rehab",
+                "Dementia & Alzheimer's Care",
               ].map((item, i) => (
                 <FadeIn
                   key={i}
@@ -417,7 +417,7 @@ const HomePage = () => {
             Looking for the Best Rehabilitation Centre in Garia, Kolkata?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-            Our 24x7 care team is ready to assist your family with stroke recovery, elder care, post-hospital recovery, and patient care home admission.
+            Our 24x7 care team is ready to assist your family with rehabilitation, elder care, post-hospital recovery, and patient care home admission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
