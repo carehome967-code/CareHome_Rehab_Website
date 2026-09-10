@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { LazyImage, LazyVideo } from "@/components/LazyMedia";
 
 import serviceImage from "@/assets/ServiceImage.jpeg";
+import photo38 from "@/assets/photos/photo38.jpeg";
+import photo39 from "@/assets/photos/photo39.jpeg";
 
 // Using Vite's import.meta.glob with import: 'default' to resolve media URLs cleanly
 const imageModules = import.meta.glob<string>([
@@ -20,12 +22,14 @@ const videoModules = import.meta.glob<string>([
   '@/assets/photos/*.{mp4,webm,ogg}'
 ], { eager: true, import: 'default' });
 
-const dynamicPhotoItems = Object.entries(imageModules).map(([path, url], index) => ({
-  src: url,
-  alt: `Gallery Photo ${index + 1}`,
-  type: "image" as const,
-  className: ""
-}));
+const dynamicPhotoItems = Object.entries(imageModules)
+  .filter(([path]) => !path.includes("photo38") && !path.includes("photo39"))
+  .map(([path, url], index) => ({
+    src: url,
+    alt: `Gallery Photo ${index + 1}`,
+    type: "image" as const,
+    className: ""
+  }));
 
 const photoItems = [
   {
@@ -33,6 +37,18 @@ const photoItems = [
     alt: "Care Home Rehabilitation & Patient Services Facility Kolkata",
     type: "image" as const,
     className: "object-left"
+  },
+  {
+    src: photo38,
+    alt: "Care Home Rehabilitation & Patient Recovery - Photo 38",
+    type: "image" as const,
+    className: ""
+  },
+  {
+    src: photo39,
+    alt: "Care Home Patient Care & Nursing Facilities - Photo 39",
+    type: "image" as const,
+    className: ""
   },
   ...dynamicPhotoItems
 ];
