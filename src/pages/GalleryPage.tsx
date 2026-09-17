@@ -11,18 +11,42 @@ import serviceImage from "@/assets/ServiceImage.jpeg";
 import photo38 from "@/assets/photos/photo38.jpeg";
 import photo39 from "@/assets/photos/photo39.jpeg";
 
-// Using Vite's import.meta.glob with import: 'default' to resolve media URLs cleanly
+// Video Imports for explicit ordering & names
+import video1 from "@/assets/gallery/videos/Video1.mp4";
+import video2 from "@/assets/gallery/videos/Video2.mp4";
+import video3 from "@/assets/gallery/videos/Video3.mp4";
+import video4 from "@/assets/gallery/videos/Vedio4.mp4";
+import video5 from "@/assets/gallery/videos/Video5.mp4";
+import video6 from "@/assets/gallery/videos/Video6.mp4";
+import video7 from "@/assets/gallery/videos/Video7.mp4";
+import video8 from "@/assets/gallery/videos/Video8.mp4";
+import video9 from "@/assets/gallery/videos/Video9.mp4";
+import video10 from "@/assets/gallery/videos/Video10.mp4";
+import video11 from "@/assets/gallery/videos/Video11.mp4";
+import video12 from "@/assets/gallery/videos/video12.mp4";
+
+// New Videos Imports
+import meditationVideo from "@/assets/gallery/videos/Meditation.mp4";
+import morningPrayerVideo from "@/assets/gallery/videos/Mornning Prayer.mp4";
+import pmrt1Video from "@/assets/gallery/videos/PMRT1.mp4";
+import pmrt2Video from "@/assets/gallery/videos/PMRT2.mp4";
+
+export interface MediaItem {
+  src: string;
+  alt: string;
+  name?: string;
+  role?: string;
+  type: "image" | "video";
+  className?: string;
+}
+
+// Using Vite's import.meta.glob with import: 'default' for photos
 const imageModules = import.meta.glob<string>([
   '@/assets/gallery/images/*.{jpeg,jpg,png,webp}',
   '@/assets/photos/*.{jpeg,jpg,png,webp}'
 ], { eager: true, import: 'default' });
 
-const videoModules = import.meta.glob<string>([
-  '@/assets/gallery/videos/*.{mp4,webm,ogg}',
-  '@/assets/photos/*.{mp4,webm,ogg}'
-], { eager: true, import: 'default' });
-
-const dynamicPhotoItems = Object.entries(imageModules)
+const dynamicPhotoItems: MediaItem[] = Object.entries(imageModules)
   .filter(([path]) => !path.includes("photo38") && !path.includes("photo39"))
   .map(([path, url], index) => ({
     src: url,
@@ -31,7 +55,7 @@ const dynamicPhotoItems = Object.entries(imageModules)
     className: ""
   }));
 
-const photoItems = [
+const photoItems: MediaItem[] = [
   {
     src: serviceImage,
     alt: "Care Home Rehabilitation & Patient Services Facility Kolkata",
@@ -53,14 +77,119 @@ const photoItems = [
   ...dynamicPhotoItems
 ];
 
-const videoItems = Object.entries(videoModules).map(([path, url], index) => ({
-  src: url,
-  alt: `Gallery Video ${index + 1}`,
-  type: "video" as const,
-  className: ""
-}));
+const videoItems: MediaItem[] = [
+  // 1st Row: 4 Team Leader Videos
+  {
+    src: video1,
+    name: "Saibal Sanyal",
+    role: "Founder & Recovery Coach",
+    alt: "Saibal Sanyal - Care Home Founder Video",
+    type: "video" as const,
+  },
+  {
+    src: video2,
+    name: "Kanishka Mukherjee",
+    role: "Counselor & Peer Educator",
+    alt: "Kanishka Mukherjee - Counselor & Peer Educator Video",
+    type: "video" as const,
+  },
+  {
+    src: video3,
+    name: "Koushik Bhattacharya",
+    role: "Counselor & Program Coordinator",
+    alt: "Koushik Bhattacharya - Counselor & Program Coordinator Video",
+    type: "video" as const,
+  },
+  {
+    src: video4,
+    name: "Sangram Chatterjee",
+    role: "Recovery & Rehabilitation Specialist",
+    alt: "Sangram Chatterjee - Care Home Rehabilitation Video",
+    type: "video" as const,
+  },
 
-const mediaItems = [...photoItems, ...videoItems];
+  // 2nd Row: 4 New Videos (Activities & Therapies)
+  {
+    src: meditationVideo,
+    name: "Meditation Session",
+    role: "Mindfulness & Inner Healing",
+    alt: "Meditation Session Video - Care Home Kolkata",
+    type: "video" as const,
+  },
+  {
+    src: morningPrayerVideo,
+    name: "Morning Prayer",
+    role: "Daily Community Wellness",
+    alt: "Morning Prayer Video - Care Home Kolkata",
+    type: "video" as const,
+  },
+  {
+    src: pmrt1Video,
+    name: "PMRT Session 1",
+    role: "Progressive Muscle Relaxation",
+    alt: "PMRT Therapy Session 1 Video - Care Home Kolkata",
+    type: "video" as const,
+  },
+  {
+    src: pmrt2Video,
+    name: "PMRT Session 2",
+    role: "Relaxation & Stress Relief Therapy",
+    alt: "PMRT Therapy Session 2 Video - Care Home Kolkata",
+    type: "video" as const,
+  },
+
+  // Remaining Videos
+  {
+    src: video5,
+    name: "Rehabilitation & Recovery Session",
+    alt: "Rehabilitation & Recovery Session Video",
+    type: "video" as const,
+  },
+  {
+    src: video6,
+    name: "Care Home Facility & Nursing Care",
+    alt: "Care Home Facility & Nursing Care Video",
+    type: "video" as const,
+  },
+  {
+    src: video7,
+    name: "Medical Consultation & Care",
+    alt: "Medical Consultation & Care Video",
+    type: "video" as const,
+  },
+  {
+    src: video8,
+    name: "De-Addiction Support & Counseling",
+    alt: "De-Addiction Support & Counseling Video",
+    type: "video" as const,
+  },
+  {
+    src: video9,
+    name: "Counselor & Resident Interaction",
+    alt: "Counselor & Resident Interaction Video",
+    type: "video" as const,
+  },
+  {
+    src: video10,
+    name: "Community Recovery & Life at Care Home",
+    alt: "Community Recovery & Life at Care Home Video",
+    type: "video" as const,
+  },
+  {
+    src: video11,
+    name: "Daily Wellness & Nursing Supervision",
+    alt: "Daily Wellness & Nursing Supervision Video",
+    type: "video" as const,
+  },
+  {
+    src: video12,
+    name: "Care Home Patient Recovery Highlights",
+    alt: "Care Home Patient Recovery Highlights Video",
+    type: "video" as const,
+  },
+];
+
+const mediaItems: MediaItem[] = [...photoItems, ...videoItems];
 
 const GalleryPage = () => {
   useSEO({
@@ -73,7 +202,7 @@ const GalleryPage = () => {
   const [lightbox, setLightbox] = useState<{
     index: number;
     type: string;
-    items: typeof mediaItems; // We pass the array context to the lightbox so it knows which array we're viewing
+    items: typeof mediaItems;
   } | null>(null);
 
   const [filter, setFilter] = useState<'all' | 'image' | 'video'>('all');
@@ -174,10 +303,10 @@ const GalleryPage = () => {
                   <FadeIn
                     key={i}
                     direction="up"
-                    className="aspect-square rounded-2xl overflow-hidden cursor-pointer group relative shadow-md hover:shadow-2xl transition-all duration-500"
+                    className="rounded-2xl overflow-hidden cursor-pointer group relative shadow-md hover:shadow-2xl transition-all duration-500 bg-background border border-border/60 flex flex-col justify-between"
                     onClick={() => setLightbox({ index: i, type: 'video', items: videoItems })}
                   >
-                    <div className="relative w-full h-full">
+                    <div className="relative aspect-square w-full overflow-hidden bg-muted">
                       <LazyVideo
                         src={item.src}
                         className="w-full h-full object-cover"
@@ -192,10 +321,22 @@ const GalleryPage = () => {
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                         <Play className="w-12 h-12 text-white" />
                       </div>
-                      <div className="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded-full text-xs">
+                      <div className="absolute top-2 right-2 bg-black/60 backdrop-blur-md text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-md">
                         Video
                       </div>
                     </div>
+                    {item.name && (
+                      <div className="p-3 bg-card border-t border-border/40 text-center">
+                        <p className="font-heading font-bold text-sm text-foreground group-hover:text-primary transition-colors leading-tight">
+                          {item.name}
+                        </p>
+                        {item.role && (
+                          <p className="text-xs text-muted-foreground mt-0.5 font-medium leading-tight">
+                            {item.role}
+                          </p>
+                        )}
+                      </div>
+                    )}
                   </FadeIn>
                 ))}
               </StaggerContainer>
@@ -207,7 +348,7 @@ const GalleryPage = () => {
       {/* Lightbox */}
       {lightbox !== null && (
         <div
-          className="fixed inset-0 z-[100] bg-foreground/95 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[100] bg-foreground/95 flex items-center justify-center p-4 flex-col"
           onClick={() => setLightbox(null)}
         >
           <button
@@ -217,11 +358,20 @@ const GalleryPage = () => {
             <X className="w-8 h-8" />
           </button>
 
+          {lightbox.items[lightbox.index].name && (
+            <div className="text-center mb-4 text-background z-10">
+              <h3 className="text-xl md:text-2xl font-heading font-bold">{lightbox.items[lightbox.index].name}</h3>
+              {lightbox.items[lightbox.index].role && (
+                <p className="text-sm text-background/80 font-medium">{lightbox.items[lightbox.index].role}</p>
+              )}
+            </div>
+          )}
+
           {lightbox.items[lightbox.index].type === "image" ? (
             <img
               src={lightbox.items[lightbox.index].src}
               alt={lightbox.items[lightbox.index].alt}
-              className="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl"
+              className="max-w-full max-h-[75vh] rounded-xl object-contain shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
           ) : (
@@ -229,7 +379,7 @@ const GalleryPage = () => {
               src={lightbox.items[lightbox.index].src}
               controls
               autoPlay
-              className="max-w-full max-h-[85vh] rounded-xl shadow-2xl"
+              className="max-w-full max-h-[75vh] rounded-xl shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               Your browser does not support the video tag.
