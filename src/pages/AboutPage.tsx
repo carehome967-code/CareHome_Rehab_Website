@@ -6,8 +6,8 @@ import galleryCounselling from "@/assets/gallery-counselling.jpg";
 import parallaxAddiction from "@/assets/gallery/images/WhatsApp Image 2026-03-05 at 16.27.51.jpeg";
 import founderSaibal from "@/assets/founder-saibal-home.jpeg";
 import founderSoumya from "@/assets/founder-soumya-home.jpg";
-import teamFull from "@/assets/team-full.jpg";
-import { CheckCircle, Target, Lightbulb, Heart, Users } from "lucide-react";
+import TeamSection from "@/components/TeamSection";
+import { CheckCircle, Target, Lightbulb, Heart } from "lucide-react";
 
 const AboutPage = () => {
   useSEO({
@@ -110,45 +110,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <FadeIn className="text-center mb-12">
-            <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Our Professionals</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mt-2 mb-4">Meet Our Team</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Our multidisciplinary team of medical professionals, counsellors, and support staff ensures comprehensive care for every individual.</p>
-          </FadeIn>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {[
-              { name: "Dr. Suranjana Ganguly", role: "Psychiatrist" },
-              { name: "Dr. Amal Choudhury", role: "General Physician" },
-              { name: "Swapnaja Adhikari", role: "Psychologist" },
-              { name: "Sharmila Adhikary", role: "Psychologist" },
-              { name: "Arpita Sharkhel", role: "Advocate / Legal Advisor" },
-              { name: "Shamik Chatterjee", role: "Media & Digital Support, Peer Motivator" },
-              { name: "Kaushik Bhattacharya", role: "Counselor / Program Coordinator, Sober since 1999" },
-              { name: "Kanishka Mukherjee", role: "Counselor / Peer Educator, Sober since 1998" },
-              { name: "Soumya Mukherjee", role: "Therapist / Recovery Coach, Sober since 2012" },
-              { name: "Suman Sengupta", role: "Sessionist / Peer Motivator, Sober since 2013" },
-              { name: "Asish Chatterjee", role: "Peer Educator / Warden, Sober since 2015" },
-              { name: "Sujoy Haldar", role: "Care Giver" },
-              { name: "Avijit Singha", role: "Ward Boy / Cook" },
-            ].map((member, i) => (
-              <FadeIn key={i} delay={i * 0.05} direction="up" className="healthcare-card p-6 text-center">
-                <div className="w-14 h-14 rounded-full bg-healthcare-light-blue flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="font-heading font-semibold text-lg">{member.name}</h3>
-                <p className="text-muted-foreground text-sm mt-1">{member.role}</p>
-              </FadeIn>
-            ))}
-          </div>
-          {/* Full team photo */}
-          <FadeIn direction="up" className="mt-16 max-w-5xl mx-auto">
-            <img src={teamFull} alt="CARE HOME Full Team" className="rounded-2xl shadow-xl w-full object-cover" loading="lazy" />
-            <p className="text-center text-muted-foreground mt-4 font-medium">The CARE HOME Team – Service with Compassion</p>
-          </FadeIn>
-        </div>
-      </section>
+      <TeamSection />
       <section className="parallax-bg py-32 relative" style={{ backgroundImage: `url(${parallaxAddiction})` }}>
         <div className="absolute inset-0 bg-foreground/80" />
         <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
