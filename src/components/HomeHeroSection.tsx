@@ -86,7 +86,7 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
           {/* Split words and animate each one */}
           {title.split(" ").map((word, i) => {
             // Highlight keywords in white for contrast against yellow title
-            const highlighted = ["Care", "Recovery", "Structured"].includes(word);
+            const highlighted = ["Rehabilitation", "Recovery", "Structured"].includes(word);
             return (
               <span key={i} className="inline-block overflow-hidden align-bottom mr-[0.25em]">
                 <motion.span
@@ -126,25 +126,6 @@ const HomeHeroSection = ({ images, title, subtitle, children }: HomeHeroSectionP
             {children}
           </motion.div>
         )}
-
-        {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.85 }}
-          className="mt-10 md:mt-14 flex flex-wrap gap-6 md:gap-8"
-        >
-          {[
-            { value: "125+", label: "Families Helped" },
-            { value: "24/7", label: "Medical Support" },
-            { value: "3+", label: "Years of Service" },
-          ].map((stat) => (
-            <div key={stat.label} className="flex flex-col">
-              <span className="text-2xl md:text-3xl font-heading font-bold text-secondary drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">{stat.value}</span>
-              <span className="text-white/80 text-sm font-medium drop-shadow-md">{stat.label}</span>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const AboutPage = () => {
   useSEO({
     title: "About Us | Detoxification, De Addiction & Old Age Retirement Home Kolkata",
     description: "Learn about Care Home Rehabilitation Centre in Garia, Kolkata: Specialists in Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, Mild Psychological Disorder care, and Old age / Retirement Home living.",
-    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home in Garia",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co-Occurring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home in Garia",
     canonical: "https://www.carehomekolkata.in/about",
   });
 
@@ -84,10 +84,10 @@ const AboutPage = () => {
                 ],
               },
               {
-                name: "Soumya Suvra Sengupta",
+                name: "Soumyo Subhra Sengupta",
                 image: founderSoumya,
                 desc: [
-                  "Soumya Suvra Sengupta is one of the founder members of the organization.",
+                  "Soumyo Subhra Sengupta is one of the founder members of the organization.",
                   "His strong alignment with the mission, values, and long-term vision of CARE HOME has strengthened the organization's operational framework.",
                   "Through his strategic guidance and hands-on involvement, the organization has achieved sustainable growth and expanded its impact in the field of de-addiction and rehabilitation.",
                 ],

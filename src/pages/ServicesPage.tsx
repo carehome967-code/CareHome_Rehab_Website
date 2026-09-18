@@ -72,7 +72,7 @@ const ServicesPage = () => {
   useSEO({
     title: "Services | Detoxification, De Addiction, Old Age & Retirement Home Kolkata",
     description: "Care Home Kolkata services: Medically supervised Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, Mild Psychological Disorder care, and Old age / Retirement Home living.",
-    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre Kolkata, 24/7 Nursing Care Garia",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co-Occurring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre Kolkata, 24/7 Nursing Care Garia",
     canonical: "https://www.carehomekolkata.in/services",
   });
 

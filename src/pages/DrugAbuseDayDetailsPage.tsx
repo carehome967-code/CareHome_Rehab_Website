@@ -56,7 +56,7 @@ const DrugAbuseDayDetailsPage = () => {
                     </span>{" "}
                     (Ex-IPS, MLA, Sonarpur North), whose leadership and vision continue to motivate community reform. Our sincere thanks to{" "}
                     <span className="inline-block font-extrabold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 shadow-sm my-1">
-                      Sri Prasenjet Bishnoi
+                      Sri Prasenjit Bishnoi
                     </span>{" "}
                     (IC, Narendrapur P.S) for his steadfast commitment toward law enforcement, community safety, and youth guidance. We also express our gratitude to{" "}
                     <span className="inline-block font-extrabold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 shadow-sm my-1">

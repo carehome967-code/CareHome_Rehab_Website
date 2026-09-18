@@ -3,29 +3,39 @@ import HeroSection from "@/components/HeroSection";
 import { useSEO } from "@/hooks/useSEO";
 import { FadeIn } from "@/components/animations/FadeIn";
 import heroCertificates from "@/assets/hero-certificates.jpg";
-import certLifeMembership from "@/assets/cert-life-membership.jpg";
-import certUtc12 from "@/assets/cert-utc-course-1-2.jpg";
-import certUtc34 from "@/assets/cert-utc-course-3-4.jpg";
-import certUtc58 from "@/assets/cert-utc-course-5-8.jpg";
-import certIssup from "@/assets/cert-issup-participation.jpg";
-import certYrg from "@/assets/cert-yrg-care-workshop.jpg";
-import certNaco from "@/assets/cert-naco-completion.jpg";
-import certAicpirf from "@/assets/cert-aicpirf-membership.jpg";
-import certNarcotics from "@/assets/cert-narcotics-bureau.jpg";
-import certTradeLicense from "@/assets/cert-trade-license.jpg";
+import cert1 from "@/assets/Certificates/Certificate_1.jpeg";
+import cert2 from "@/assets/Certificates/Certificate_2.jpeg";
+import cert3 from "@/assets/Certificates/Certificate_3.jpeg";
+import cert4 from "@/assets/Certificates/Certificate_4.jpeg";
+import cert5 from "@/assets/Certificates/Certificate_5.jpeg";
 import { X } from "lucide-react";
 
 const certificates = [
-  { title: "Counsellors Council of India – Life Membership", desc: "Life Membership as Addiction Counselling Professional (CRN: CRN2306855), dated 29-05-2024", image: certLifeMembership },
-  { title: "UTC – Substance Use Disorders, Course 1 & 2 (40 Hours)", desc: "Completed via Ecolink Institute of Well-Being under Colombo Plan Drug Advisory Programme, Oct–Dec 2022", image: certUtc12 },
-  { title: "UTC – Substance Use Disorders, Course 3 & 4 (40 Hours)", desc: "Advanced modules including co-occurring disorders, counseling skills & group counseling, Dec 2022–Feb 2023", image: certUtc34 },
-  { title: "UTC – Substance Use Disorders, Course 5–8 (80 Hours)", desc: "Specialized courses covering case management, crisis intervention & ethics, Feb–May 2024", image: certUtc58 },
-  { title: "ISSUP India – Behavioral Addictions Webinar", desc: "Certificate of Participation on 'Impact of Behavioral Addictions on Mental Health', December 2022", image: certIssup },
-  { title: "YRG CARE – HIV & Health Program Workshop", desc: "State Level Workshop on Capacity Building for Leadership & Management for PWUD, Kolkata, May 2024", image: certYrg },
-  { title: "NACO – Community Champions Training", desc: "Community System Strengthening Initiative (NACP V) training, Kolkata, February 2024", image: certNaco },
-  { title: "AICPIRF Membership", desc: "All India Community of Person in Recovery Federation membership as Counselor/Therapist & Recovery Coach", image: certAicpirf },
-  { title: "Narcotics Control Bureau – Anti-Drug Pledge", desc: "'Say Yes to Life, No to Drugs' pledge certificate from Ministry of Home Affairs, November 2024", image: certNarcotics },
-  { title: "Permanent Certificate of Enlistment", desc: "Drug De-Addiction and Rehabilitation Centre license under West Bengal Municipal Act, valid until November 2034", image: certTradeLicense },
+  {
+    title: "Government of West Bengal – Certificate of Participation",
+    desc: "Capacity building program on drug abuse prevention titled 'Building a Healthy Society: Empowering Communities for Substance Use Prevention and Control', organized by Dept. of Psychiatric Social Work, IOP-COE (SSKM Hospital) & NCDAP, Govt. of India (April 2025)",
+    image: cert1,
+  },
+  {
+    title: "UTC – Substance Use Disorders, Course 3 & 4 (40 Hours)",
+    desc: "Certificate of Completion for Universal Treatment Curriculum Courses 3 & 4 (Common Co-occurring Mental & Medical Disorders & Basic Counselling Skills) via Ecolink Institute of Well-Being under Colombo Plan Drug Advisory Programme (Dec 2022–Feb 2023)",
+    image: cert2,
+  },
+  {
+    title: "Ministry of Social Justice & Empowerment & Ministry of Culture – Certificate of Participation",
+    desc: "Participated in 'United For the Elderly: Promoting Well Being, Dignity & Rights Against Loneliness and Isolation', organized by Dept. of Psychiatric Social Work, IOP-COE SSKMH & Indian Museum with NISD (June 2025)",
+    image: cert3,
+  },
+  {
+    title: "UTC – Substance Use Disorders, Course 1 & 2 (40 Hours)",
+    desc: "Certificate of Completion for Universal Treatment Curriculum Courses 1 & 2 (Physiology and Pharmacology & Continuum of Care) via Ecolink Institute of Well-Being under Colombo Plan Drug Advisory Programme (Oct–Dec 2022)",
+    image: cert4,
+  },
+  {
+    title: "UTC – Substance Use Disorders, Course 5–8 (80 Hours)",
+    desc: "Certificate of Completion for Universal Treatment Curriculum Courses 5–8 (Case Management, Crisis Intervention & Ethics for Addiction Professionals) via Ecolink Institute of Well-Being under Colombo Plan DAP (Feb–May 2024)",
+    image: cert5,
+  },
 ];
 
 const CertificatesPage = () => {

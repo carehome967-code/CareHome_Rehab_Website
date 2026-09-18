@@ -51,7 +51,7 @@ const HomePage = () => {
   useSEO({
     title: "Care Home Rehabilitation | Detoxification, De Addiction, Old Age & Retirement Home Kolkata",
     description: "Care Home Rehabilitation in Garia, Kolkata offers medically supervised Detoxification, De Addiction, Rehabilitation for addiction, alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and 24x7 Old age / Retirement Home care.",
-    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co Occuring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home Rehabilitation Kolkata, Care Home in Garia",
+    keywords: "Detoxification Kolkata, De Addiction Centre Kolkata, Rehabilitation for addiction alcoholism and all Co-Occurring disorders, Mild Psychological Disorder Treatment Kolkata, Old age Retirement Home Kolkata, Rehabilitation Centre in Kolkata, Care Home Rehabilitation Kolkata, Care Home in Garia",
     canonical: "https://www.carehomekolkata.in/",
   });
 
@@ -60,7 +60,7 @@ const HomePage = () => {
       {/* Hero Slideshow */}
       <HomeHeroSection
         images={[heroHome1, heroHome2, heroHome3, heroHome4]}
-        title="Best Care Home Rehabilitation Centre in Garia, Kolkata"
+        title="Best Rehabilitation Centre in Garia, Kolkata"
         subtitle="Premier 24x7 Care Home in Kolkata specializing in Detoxification, De Addiction, Rehabilitation for addiction/ alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and Old age / Retirement Home care."
       >
         <div className="flex flex-col sm:flex-row gap-4">
@@ -129,7 +129,7 @@ const HomePage = () => {
                   <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg mx-auto mb-2">
                     <img
                       src={founderSoumya}
-                      alt="Soumya Suvra Sengupta - Co-Founder Care Home Garia Kolkata"
+                      alt="Soumyo Subhra Sengupta - Co-Founder Care Home Garia Kolkata"
                       width="96"
                       height="96"
                       className="w-full h-full object-cover object-top"
@@ -137,7 +137,7 @@ const HomePage = () => {
                       decoding="async"
                     />
                   </div>
-                  <p className="text-sm font-semibold">Soumya Suvra Sengupta</p>
+                  <p className="text-sm font-semibold">Soumyo Subhra Sengupta</p>
                   <p className="text-xs text-muted-foreground">Co-Founder</p>
                 </div>
               </div>
@@ -207,7 +207,7 @@ const HomePage = () => {
               <div className="relative w-full h-48 -mt-12 mb-4 overflow-hidden rounded-xl">
                 <img
                   src={counselling}
-                  alt="Rehabilitation for addiction alcoholism and all Co Occuring disorders Kolkata"
+                  alt="Rehabilitation for addiction alcoholism and all Co-Occurring disorders Kolkata"
                   width="400"
                   height="192"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

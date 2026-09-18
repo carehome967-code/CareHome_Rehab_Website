@@ -9,15 +9,15 @@ const NewSlider: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/g1.jpeg",
-      text: "kaushik Sir is in great mood... ",
+      text: "Kaushik Sir is in a great mood...",
     },
     {
       image: "/g2.jpeg",
-      text: "it's all about relation building, no teacher no student .. ",
+      text: "It's all about relationship building — no teacher, no student...",
     },
     {
       image: "/g3.jpeg",
-      text: "desperation to passion is the journey.....",
+      text: "From desperation to passion is the journey...",
     },
   ];
 

@@ -18,7 +18,7 @@ const plans = [
     extras: [
       "Medicine charge",
       "Pathology expenditure",
-      "General medicine bill",
+      "General Medicine Bill",
     ],
   },
   {
@@ -35,7 +35,7 @@ const plans = [
       "Psychiatrist visit",
       "Psychiatric medicines",
       "Pathology charges",
-      "General medicines bill",
+      "General Medicine Bill",
     ],
   },
   {
@@ -53,7 +53,7 @@ const plans = [
       "Psychiatrist visit",
       "Psychiatric medicines",
       "Pathology charges",
-      "General medicines bill",
+      "General Medicine Bill",
     ],
   },
   {
@@ -72,7 +72,7 @@ const plans = [
       "Psychiatrist visit",
       "Psychiatric medicines",
       "Pathology charges",
-      "General medicines bill",
+      "General Medicine Bill",
     ],
   },
 ];
