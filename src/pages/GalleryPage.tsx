@@ -25,11 +25,25 @@ import video10 from "@/assets/gallery/videos/Video10.mp4";
 import video11 from "@/assets/gallery/videos/Video11.mp4";
 import video12 from "@/assets/gallery/videos/video12.mp4";
 
-// New Videos Imports
+// Therapy, Activity & Leadership Video Imports
 import meditationVideo from "@/assets/gallery/videos/Meditation.mp4";
 import morningPrayerVideo from "@/assets/gallery/videos/Mornning Prayer.mp4";
 import pmrt1Video from "@/assets/gallery/videos/PMRT1.mp4";
 import pmrt2Video from "@/assets/gallery/videos/PMRT2.mp4";
+
+// Additional Local Video Imports
+import krishnaGhosh1Video from "@/assets/gallery/videos/KrishnaGhosh1.mp4";
+import krishnaGhosh2Video from "@/assets/gallery/videos/KrishnaGhosh2.mp4";
+import krishnaGhosh3Video from "@/assets/gallery/videos/KrishnaGhosh3.mp4";
+import paromota1Video from "@/assets/gallery/videos/Paromota1.mp4";
+import priyangshuKarmakar1Video from "@/assets/gallery/videos/PriyangshuKarmakar1.mp4";
+import priyangshuKarmakar2Video from "@/assets/gallery/videos/PriyangshuKarmakar2.mp4";
+import saibalSanyal1Video from "@/assets/gallery/videos/Saibal Sanyal1.mp4";
+import saibalSanyal2Video from "@/assets/gallery/videos/Saibal Sanyal2.mp4";
+import subhjitVideo from "@/assets/gallery/videos/Subhjit.mp4";
+import symonVideo from "@/assets/gallery/videos/Symon.mp4";
+import unknown1Video from "@/assets/gallery/videos/Unknown1.mp4";
+import unknown2Video from "@/assets/gallery/videos/Unknown2.mp4";
 
 export interface MediaItem {
   src: string;
@@ -108,7 +122,7 @@ const videoItems: MediaItem[] = [
     type: "video" as const,
   },
 
-  // 2nd Row: 4 New Videos (Activities & Therapies)
+  // 2nd Row: Activities & Therapies
   {
     src: meditationVideo,
     name: "Meditation Session",
@@ -138,7 +152,97 @@ const videoItems: MediaItem[] = [
     type: "video" as const,
   },
 
-  // Remaining Videos
+  // Founder & Leadership Addresses
+  {
+    src: saibalSanyal1Video,
+    name: "Saibal Sanyal - Address 1",
+    role: "Founder's Guidance & Recovery Message",
+    alt: "Saibal Sanyal Founder Speech & Guidance Video 1",
+    type: "video" as const,
+  },
+  {
+    src: saibalSanyal2Video,
+    name: "Saibal Sanyal - Address 2",
+    role: "Addiction Counseling & Motivation",
+    alt: "Saibal Sanyal Founder Speech & Guidance Video 2",
+    type: "video" as const,
+  },
+
+  // Resident Testimonials & Recovery Journeys
+  {
+    src: krishnaGhosh1Video,
+    name: "Krishna Ghosh - Session 1",
+    role: "Patient Recovery Story & Experience",
+    alt: "Krishna Ghosh Recovery Story Video 1",
+    type: "video" as const,
+  },
+  {
+    src: krishnaGhosh2Video,
+    name: "Krishna Ghosh - Session 2",
+    role: "Progress & Healing Journey",
+    alt: "Krishna Ghosh Recovery Story Video 2",
+    type: "video" as const,
+  },
+  {
+    src: krishnaGhosh3Video,
+    name: "Krishna Ghosh - Session 3",
+    role: "Rehabilitation & Reflection",
+    alt: "Krishna Ghosh Recovery Story Video 3",
+    type: "video" as const,
+  },
+  {
+    src: priyangshuKarmakar1Video,
+    name: "Priyangshu Karmakar - Part 1",
+    role: "Recovery Journey & Personal Testimony",
+    alt: "Priyangshu Karmakar Recovery Journey Video 1",
+    type: "video" as const,
+  },
+  {
+    src: priyangshuKarmakar2Video,
+    name: "Priyangshu Karmakar - Part 2",
+    role: "Rehabilitation Progress & Wellness",
+    alt: "Priyangshu Karmakar Recovery Journey Video 2",
+    type: "video" as const,
+  },
+  {
+    src: paromota1Video,
+    name: "Paromita",
+    role: "Therapy & Counseling Session",
+    alt: "Paromita Counseling Session Video",
+    type: "video" as const,
+  },
+  {
+    src: subhjitVideo,
+    name: "Subhajit",
+    role: "Resident Recovery Story",
+    alt: "Subhajit Recovery Story Video",
+    type: "video" as const,
+  },
+  {
+    src: symonVideo,
+    name: "Symon",
+    role: "Rehabilitation Experience",
+    alt: "Symon Rehabilitation Experience Video",
+    type: "video" as const,
+  },
+
+  // Resident Group & Community Sessions
+  {
+    src: unknown1Video,
+    name: "Resident Group Session 1",
+    role: "Group Therapy & Community Recovery",
+    alt: "Resident Group Session Video 1",
+    type: "video" as const,
+  },
+  {
+    src: unknown2Video,
+    name: "Resident Group Session 2",
+    role: "Community Wellness & Activities",
+    alt: "Resident Group Session Video 2",
+    type: "video" as const,
+  },
+
+  // Facility & Rehabilitation Highlights
   {
     src: video5,
     name: "Rehabilitation & Recovery Session",
@@ -206,6 +310,11 @@ const GalleryPage = () => {
   } | null>(null);
 
   const [filter, setFilter] = useState<'all' | 'image' | 'video'>('all');
+  const [visiblePhotoCount, setVisiblePhotoCount] = useState<number>(12);
+  const [visibleVideoCount, setVisibleVideoCount] = useState<number>(12);
+
+  const displayedPhotos = photoItems.slice(0, visiblePhotoCount);
+  const displayedVideos = videoItems.slice(0, visibleVideoCount);
 
   return (
     <div>
@@ -230,8 +339,8 @@ const GalleryPage = () => {
             <div className="flex flex-wrap justify-center gap-4">
               {[
                 { id: 'all', label: 'All Photos & Videos', icon: Layers },
-                { id: 'image', label: 'Only Photos', icon: ImageIcon },
-                { id: 'video', label: 'Only Videos', icon: Video },
+                { id: 'image', label: `Only Photos (${photoItems.length})`, icon: ImageIcon },
+                { id: 'video', label: `Only Videos (${videoItems.length})`, icon: Video },
               ].map((f) => {
                 const Icon = f.icon;
                 return (
@@ -259,7 +368,7 @@ const GalleryPage = () => {
               {filter === 'all' && (
                 <div className="flex items-center gap-3 mb-8">
                   <ImageIcon className="w-8 h-8 text-primary" />
-                  <h3 className="text-3xl font-bold text-foreground">Photos</h3>
+                  <h3 className="text-3xl font-bold text-foreground">Photos ({photoItems.length})</h3>
                 </div>
               )}
               <StaggerContainer
@@ -267,7 +376,7 @@ const GalleryPage = () => {
                 delayChildren={0.1}
                 staggerChildren={0.05}
               >
-                {photoItems.map((item, i) => (
+                {displayedPhotos.map((item, i) => (
                   <FadeIn
                     key={i}
                     direction="up"
@@ -282,6 +391,16 @@ const GalleryPage = () => {
                   </FadeIn>
                 ))}
               </StaggerContainer>
+              {visiblePhotoCount < photoItems.length && (
+                <div className="text-center mt-10">
+                  <button
+                    onClick={() => setVisiblePhotoCount((prev) => Math.min(prev + 12, photoItems.length))}
+                    className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-semibold bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-sm active:scale-95"
+                  >
+                    Load More Photos ({photoItems.length - visiblePhotoCount} remaining)
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
@@ -291,7 +410,7 @@ const GalleryPage = () => {
               {filter === 'all' && (
                 <div className="flex items-center gap-3 mb-8">
                   <Video className="w-8 h-8 text-primary" />
-                  <h3 className="text-3xl font-bold text-foreground">Videos</h3>
+                  <h3 className="text-3xl font-bold text-foreground">Videos ({videoItems.length})</h3>
                 </div>
               )}
               <StaggerContainer
@@ -299,7 +418,7 @@ const GalleryPage = () => {
                 delayChildren={0.1}
                 staggerChildren={0.05}
               >
-                {videoItems.map((item, i) => (
+                {displayedVideos.map((item, i) => (
                   <FadeIn
                     key={i}
                     direction="up"
@@ -340,6 +459,16 @@ const GalleryPage = () => {
                   </FadeIn>
                 ))}
               </StaggerContainer>
+              {visibleVideoCount < videoItems.length && (
+                <div className="text-center mt-10">
+                  <button
+                    onClick={() => setVisibleVideoCount((prev) => Math.min(prev + 12, videoItems.length))}
+                    className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-semibold bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-sm active:scale-95"
+                  >
+                    Load More Videos ({videoItems.length - visibleVideoCount} remaining)
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>
