@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 3: We're Here For You */}
+          {/* Column 3: We're Here For You & Follow Us */}
           <div>
             <h4 className="text-lg font-heading font-semibold mb-4 text-background">
               We're Here For You
@@ -61,13 +61,42 @@ const Footer = () => {
             </p>
             <a
               href="tel:6289424181"
-              className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-md"
+              className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-md mb-8"
             >
               Get Help Now
             </a>
+
+            {/* Follow Us Social Links Section */}
+            <div>
+              <h5 className="text-sm font-heading font-semibold uppercase tracking-wider text-secondary mb-3">
+                Follow Us
+              </h5>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61595861372524"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Care Home Facebook Page"
+                  title="Care Home Facebook Page"
+                  className="w-10 h-10 rounded-xl bg-background/10 hover:bg-[#1877F2] text-background hover:text-white flex items-center justify-center transition-all duration-300 border border-background/20 hover:border-transparent hover:scale-110 shadow-sm"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/carehome967/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Care Home Instagram Page (@carehome967)"
+                  title="Care Home Instagram (@carehome967)"
+                  className="w-10 h-10 rounded-xl bg-background/10 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] text-background hover:text-white flex items-center justify-center transition-all duration-300 border border-background/20 hover:border-transparent hover:scale-110 shadow-sm"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Column 4: Contact Us (Right Side Last Section) */}
+          {/* Column 4: Contact Us */}
           <div>
             <h4 className="text-lg font-heading font-semibold mb-4 text-background">
               Contact Us

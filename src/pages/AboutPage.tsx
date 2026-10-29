@@ -28,9 +28,14 @@ const AboutPage = () => {
       {/* About Content */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn direction="right">
-              <img src={galleryCounselling} alt="Rehabilitation Centre in Garia Kolkata - Professional Care Team" className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" loading="lazy" />
+              <img
+                src={galleryCounselling}
+                alt="Rehabilitation Centre in Garia Kolkata - Professional Care Team"
+                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                loading="lazy"
+              />
             </FadeIn>
             <FadeIn direction="left">
               <h2 className="text-3xl font-heading font-bold mb-6">Our Story & Medical Mission</h2>
@@ -41,27 +46,39 @@ const AboutPage = () => {
                 <p>
                   Serving families across <strong className="text-foreground">Garia, Narendrapur, Sonarpur, Kamalgazi, Baghajatin, Patuli, and South 24 Parganas</strong>, over 125 families have trusted Care Home for dedicated post-operative recovery, bedridden patient assistance, and long-term medical care.
                 </p>
-                <div className="bg-background/50 p-6 rounded-xl border border-border/50 my-6 shadow-sm">
+                <div className="bg-background/50 p-6 rounded-xl border border-border/50 my-4 shadow-sm">
                   <p className="font-semibold text-foreground mb-2">Multidisciplinary Medical Specialists</p>
                   <p className="text-sm">
                     Our team of expert <strong className="text-primary">psychiatrists, general physicians, clinical psychologists, physiotherapists, and 24/7 nurses</strong> ensures round-the-clock clinical supervision, personalized recovery plans, and compassionate nursing assistance.
                   </p>
                 </div>
-                <p>
-                  Our comprehensive rehabilitation model combines state-of-the-art physiotherapy, cognitive behavioral therapy (CBT), daily medical checkups, and structured 12-Step recovery methodologies.
-                </p>
-                <p>
-                  Beyond clinical care, CARE HOME fosters <strong className="text-foreground">social reintegration and dignified living</strong> for senior citizens and recovering individuals.
-                </p>
-                <p>
-                  Through <strong className="text-foreground">The Care Foundation</strong>, we facilitate vocational guidance and community support programs, partnered with respected institutions such as the <span className="font-medium text-foreground">Ramakrishna Mission, Indian Institute of Technology (IIT), and The George Telegraph Institute</span>.
-                </p>
-                <p className="text-lg font-medium text-foreground mt-6 border-l-4 border-primary pl-4">
-                  CARE HOME is committed to being the most compassionate and affordable rehabilitation centre in Kolkata.
-                </p>
               </div>
             </FadeIn>
           </div>
+
+          {/* Full-width Center-aligned Content */}
+          <FadeIn direction="up" className="mt-14 md:mt-18 pt-10 md:pt-14 border-t border-border/60 max-w-4xl mx-auto text-center">
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
+              <p>
+                Our comprehensive rehabilitation model combines <strong className="text-foreground">state-of-the-art physiotherapy</strong>, <strong className="text-foreground">cognitive behavioral therapy (CBT)</strong>, daily medical checkups, and structured <strong className="text-foreground">12-Step recovery methodologies</strong>.
+              </p>
+              <p>
+                Beyond clinical care, CARE HOME fosters <strong className="text-foreground">social reintegration and dignified living</strong> for senior citizens and recovering individuals.
+              </p>
+              <p>
+                Through <strong className="text-foreground">The Care Foundation</strong>, we facilitate vocational guidance and community support programs, partnered with respected institutions such as the{" "}
+                <span className="font-semibold text-foreground">Ramakrishna Mission</span>,{" "}
+                <span className="font-semibold text-foreground">Indian Institute of Technology (IIT)</span>, and{" "}
+                <span className="font-semibold text-foreground">The George Telegraph Institute</span>.
+              </p>
+            </div>
+
+            <div className="mt-8 md:mt-10 inline-block bg-primary/10 border border-primary/20 rounded-2xl px-6 md:px-10 py-5 shadow-sm max-w-3xl">
+              <p className="text-lg md:text-xl font-heading font-semibold text-primary leading-snug">
+                CARE HOME is committed to being the most compassionate and affordable rehabilitation centre in Kolkata.
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

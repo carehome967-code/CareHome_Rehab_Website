@@ -4,7 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { FadeIn } from "@/components/animations/FadeIn";
 import heroContact from "@/assets/hero-contact.jpg";
 import visitingCard from "@/assets/VisitingCard.jpeg";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Facebook, Instagram, Share2 } from "lucide-react";
 
 const ContactPage = () => {
   useSEO({
@@ -111,6 +111,41 @@ const ContactPage = () => {
                     >
                       saibalsanyal2@gmail.com
                     </a>
+                  </div>
+                </div>
+
+                {/* Social Media Channels */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-healthcare-light-blue flex items-center justify-center flex-shrink-0">
+                    <Share2 className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold mb-1">Social Media</h3>
+                    <p className="text-xs text-muted-foreground mb-3">
+                      Follow our official pages for rehabilitation insights, updates & recovery programs
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61595861372524"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Care Home Facebook Page"
+                        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#1877F2]/10 hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#1877F2]/20 font-medium text-sm transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-95"
+                      >
+                        <Facebook className="w-4 h-4 flex-shrink-0" />
+                        <span>Facebook</span>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/carehome967/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Care Home Instagram Page (@carehome967)"
+                        className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-pink-500/10 hover:bg-gradient-to-r hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] text-pink-600 hover:text-white border border-pink-500/20 font-medium text-sm transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-95"
+                      >
+                        <Instagram className="w-4 h-4 flex-shrink-0" />
+                        <span>Instagram</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

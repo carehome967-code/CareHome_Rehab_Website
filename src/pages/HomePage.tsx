@@ -23,6 +23,7 @@ import {
   Award,
   CheckCircle,
   ArrowRight,
+  Phone,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -63,19 +64,20 @@ const HomePage = () => {
         title="Best Rehabilitation Centre in Garia, Kolkata"
         subtitle="Premier 24x7 Care Home in Kolkata specializing in Detoxification, De Addiction, Rehabilitation for addiction/ alcoholism and all Co-Occurring disorders, treatment for Mild Psychological Disorder, and Old age / Retirement Home care."
       >
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="grid grid-cols-2 gap-2.5 sm:flex sm:flex-row sm:gap-4 w-full sm:w-auto">
           <a
             href="tel:7980611010"
             aria-label="Call Care Home Rehabilitation Centre Kolkata at 7980611010"
-            className="inline-flex items-center gap-2 bg-secondary hover:bg-yellow-400 text-secondary-foreground px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-yellow-400/30 active:scale-95"
+            className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-secondary hover:bg-yellow-400 text-secondary-foreground px-2.5 sm:px-8 py-3.5 sm:py-4 rounded-xl text-xs sm:text-base md:text-lg font-semibold transition-colors shadow-lg shadow-yellow-400/30 active:scale-95 text-center leading-snug"
           >
-            Call 7980611010 Now
+            <Phone className="w-3.5 h-3.5 sm:w-5 sm:h-5 flex-shrink-0" />
+            <span>Call 7980611010 Now</span>
           </a>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm text-background border border-background/40 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-background/30 transition-colors"
+            className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-background/20 backdrop-blur-sm text-background border border-background/40 px-2.5 sm:px-8 py-3.5 sm:py-4 rounded-xl text-xs sm:text-base md:text-lg font-semibold hover:bg-background/30 transition-colors text-center leading-snug"
           >
-            Contact Us
+            <span>Contact Us</span>
           </Link>
         </div>
       </HomeHeroSection>
